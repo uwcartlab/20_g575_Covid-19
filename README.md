@@ -5,4 +5,4 @@
 2. Jianxiang Qiu
 
 ### Topic
-Stories about the spread of Covid-19 in China and measures being taken.
+Stories about the spread of Covid-19 in China and measures being taken, as well as what we can learn from this.
