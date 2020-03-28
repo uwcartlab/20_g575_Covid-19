@@ -27,7 +27,7 @@ The interface directly displays the map of current confirmed cases of Covid-19 i
 
 #### **Requirements Document**
 
-![Requirements Document](img/reqdoc.png?raw=true "Requirements Document Table")
+![Requirements Document](reqdoc.png?raw=true "Requirements Document Table")
 
 
 
@@ -36,26 +36,26 @@ The interface directly displays the map of current confirmed cases of Covid-19 i
 **Design 1**
 
 Cover Page. Includes titles (overall/chapter), brief introduction, etc. The background chapter and Conclusion chapter have the similar layouts.
-![Requirements Document](img/lofi1.png?raw=true "lofi1")
+![Requirements Document](lofi1.png?raw=true "lofi1")
 
 **Design 2**
 
 Chapter: China’s story (US’s story layout is similar). Events on the map will be presented by a popup callout. Detail information about the events will appear in the Event Panel. Click on the event legend to turn on/off the event layer overlaying on the map.
-![Requirements Document](img/lofi2.png?raw=true "lofi2")
+![Requirements Document](lofi2.png?raw=true "lofi2")
 
 **Design 3**
 
 Chapter: China’s story (US’s story layout is similar). Click on the Case Statistics panel (confirmed, suspected, death, recovered, etc.) to set different symbolization for different cases on the map. Hover over a region on the map to show the cases in this region. 
-![Requirements Document](img/lofi3.png?raw=true "lofi3")
+![Requirements Document](lofi3.png?raw=true "lofi3")
 
 **Design 4**
 Chapter: China’s story (US’s story layout is similar). Click on or Scroll via the timeline to change the date and see the cases and events every time stamps, as well as see how the epidemic changes overall.
-![Requirements Document](img/lofi4.png?raw=true "lofi4")
+![Requirements Document](lofi4.png?raw=true "lofi4")
 
 **Design 5**
 Chapter: Worldwide. Users can explore the world map (Pan/Zoom/Retrieve, etc.) in this chapter to get a bigger picture of the current Covid-19 pandemic worldwide (Rank/Compare). Currently we plan to put the data of China US and some European countries such as Italy on the map. 
-![Requirements Document](img/lofi5.png?raw=true "lofi5")
+![Requirements Document](lofi5.png?raw=true "lofi5")
 
 **Design 6**
 About and Export. Users click the About button and see an About information dialogue (closable). Users click the Export button and see an Export information dialogue (closable). The layouts are similar.
-![Requirements Document](img/lofi6.png?raw=true "lofi6")
+![Requirements Document](lofi6.png?raw=true "lofi6")
