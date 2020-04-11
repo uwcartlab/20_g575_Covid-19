@@ -24,6 +24,8 @@ After learning the complete story of Wuhan, China, Maria would have a better com
 
 Lastly, Maria wants to keep herself updated on the latest situation in China and the US. Chpt.4 presents a map showing the current confirmed cases of COVID-19 in China and the US at the state/province level with proportional symbols. Resymbolize the scale ratio by date when necessary. Every single proportional symbol is clickable to retrieve the detailed information (e.g., death cases, recovered cases). Pan/Zoom are restricted to two levels to avoid collision of map symbols. Maria can retrieve the cases of COVID-19 in different places to achieve her goal of predicting when COVID-19 will impact her family.
 
+Maria is equipped with a MacBook Pro to display this website.
+
 
 #### **Requirements Document**
 
@@ -34,28 +36,25 @@ Lastly, Maria wants to keep herself updated on the latest situation in China and
 #### **Lo-Fi Wireframes**
 
 **Design 1**
-
-Cover Page. Includes titles (overall/chapter), brief introduction, etc. The background chapter and Conclusion chapter have the similar layouts.
+Cover Page (Intro). It includes the title and the brief introduction. The background chapter have the similar layouts.
 ![Requirements Document](lofi1.png?raw=true "lofi1")
 
 **Design 2**
-
-Chapter: China’s story (US’s story layout is similar). Events on the map will be presented by a popup callout. Detail information about the events will appear in the Event Panel. Click on the event legend to turn on/off the event layer overlaying on the map.
+Chapter: China’s story – Wuhan 23 Days. Story Panel will show the story. Cases will be represented at the city level (story starts with Wuhan City) at the beginning and at the province level at the end (zoomed out) with proportional symbol.
 ![Requirements Document](lofi2.png?raw=true "lofi2")
 
 **Design 3**
-
-Chapter: China’s story (US’s story layout is similar). Click on the Case Statistics panel (confirmed, suspected, death, recovered, etc.) to set different symbolization for different cases on the map. Hover over a region on the map to show the cases in this region. 
+Chapter: China’s story – Wuhan 23 Days. Scroll on the story panel to read the full story and change the date. The map will automatically change its view (by zoom/pan) to match the events in the story. The exponential chart will be updated over time. 
 ![Requirements Document](lofi3.png?raw=true "lofi3")
 
 **Design 4**
-Chapter: China’s story (US’s story layout is similar). Click on or Scroll via the timeline to change the date and see the cases and events every time stamps, as well as see how the epidemic changes overall.
+Chapter: US’s story – United States: A Nation in “Lockdown”. Click on the chapter name on the chapter menu to switch between different chapters.
 ![Requirements Document](lofi4.png?raw=true "lofi4")
 
 **Design 5**
-Chapter: Worldwide. Users can explore the world map (Pan/Zoom/Retrieve, etc.) in this chapter to get a bigger picture of the current Covid-19 pandemic worldwide (Rank/Compare). Currently we plan to put the data of China US and some European countries such as Italy on the map. 
+Chapter: Latest Situation. Users can explore the map (2-level Pan/Zoom, and Retrieve) in this chapter to get a bigger picture of the Covid-19 pandemic in China and the US today. Currently we plan to put the state/province-level data of China US on the map. Click on a proportional symbol to show the current information of cases (confirmed, death, etc.) in this area. Users can compare the cases between different areas.
 ![Requirements Document](lofi5.png?raw=true "lofi5")
 
 **Design 6**
-About and Export. Users click the About button and see an About information dialogue (closable). Users click the Export button and see an Export information dialogue (closable). The layouts are similar.
+About. Users click the About button and see an About information dialogue (closable).
 ![Requirements Document](lofi6.png?raw=true "lofi6")
