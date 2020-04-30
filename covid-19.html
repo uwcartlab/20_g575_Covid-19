@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+  <title>COVID-19: How Did We Get Here?</title>
+  <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32" />
+  <link href="lib/c3/c3.min.css" rel="stylesheet">
+  <link href="lib/leaflet/leaflet.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/misc.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#intro">COVID-19</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#intro"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#background">Symptom</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#china">China: Wuhan 24 Days</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#us">US: A Nation in Lockdown</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <div id="intro">
+    <h2><span> COVID-19: How Did We Get Here? </span></h2>
+    <h4>Map stories of the spread of coronavirus in China and the United States</h4>
+    <div id='intro-text'>Coronavirus disease 2019 (COVID-19) is an infectious disease that was first identified in December 2019 in Wuhan, China, and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic. Continue to learn more about the symptoms of COVID-19, the early spread of the virus in China and the United States, and the lessons we learned from it.</div>
+    <div class="arrow arrow-1"></div>
+    <div class="arrow arrow-2"></div>
+  </div>
+
+  <div id="wrapper">
+    <video id="background" width="100%" height="100%" controls>
+      <source src="data/background.mp4" type="video/mp4">
+    </video>
+      <!-- <h2>COVID-19: How Did We Get Here?</h2>
+      <h4>Map stories of the spread of coronavirus in China and the United States</h4> -->
+
+    <div id="map-canvas" class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0"></div>
+
+    <article class="container">
+
+      <h1 id="china">China: Wuhan 24 Days</h1>
+
+      <section class="center" id="china12312019">
+        <h2> 12/31/2019 - Day 1 </h2>
+        <p>Wuhan Municipal Health Commission issued the <b>first</b> briefing on 27 cases (7 in critical condition) of pneumonia of unknown etiology detected in Wuhan City. Most of them had direct exposure to Huanan (South China) Seafood Market.</p>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989'>http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01012020">
+        <h2> 01/01/2020 - Day 2 </h2>
+        <p><img src="images/chinastory/china01012020.jpg" width='100%'></p>
+        <p>Public security Bureau of Wuhan (@Weibo account) summoned 8 of the citizens who were believed to have posted and forwarded “untrue” information on the Internet and caused adverse social impacts, including Dr Wenliang Li, who was later recognized as the whistleblower of the virus.</p>
+        <p>Huanan (South China) Seafood Market was closed on 01/01/2020 for sanitation and disinfection.</p>
+        <p>Since the causal agent has not yet been identified or confirmed, WHO requested further information from national authorities of China to assess the risk.</p>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989'>http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/01/c_1125412773.htm'>http://www.xinhuanet.com/2020-01/01/c_1125412773.htm</a></li>
+          <li><a href='https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/'>https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01022020">
+        <h2> 01/02/2020 - Day 3 </h2>
+        <p><img src="images/chinastory/china01022020.jpg" width='100%'></p>
+        <p>Chinese Center for Disease Control and Prevention (China CDC) has received the first 4 specimens of pneumonia of unknown cause.<br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html'>http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01032020">
+        <h2> 01/03/2020 - Day 4 </h2>
+        <p><img src="images/chinastory/china01032020.jpg" width='100%'></p>
+        <p>Chinese scientists at the National Institute of Viral Disease Control and Prevention (IVDC) under China CDC have completed the genetic sequencing of the first batch of specimens and ruled out the possibilities for 26 common respiratory pathogens. Comparative genomics study showed a novel β-genus coronavirus.</p>
+        <p>Wuhan Municipal Health Commission issued a second briefing. A total of 44 cases (11 in critical condition) were confirmed and 121 close contacts of the cases was being monitored till 8 am. Primary investigations found <b>no obvious evidence of interpersonal transmission</b>.</p>
+        <p><b>China formally notified US on the outbreak</b>. At a White House briefing in March 20, Health and Human Services Secretary Alex Azar said officials had been alerted to the initial reports of the virus by discussions between CDC director Robert Redfield and Chinese CDC Director Dr. Gao on Jan. 3.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html'>http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html</a></li>
+          <li>Li, Q. (2020). An outbreak of NCIP (2019-nCoV) infection in China—Wuhan, Hubei Province, 2019–2020. China CDC Weekly, 2, 79-80.</li>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020010309017'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020010309017</a></li>
+          <li><a href='https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html'>https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html</a></li>
+          <li><a href='https://www.nytimes.com/2020/03/28/us/testing-coronavirus-pandemic.html'>https://www.nytimes.com/2020/03/28/us/testing-coronavirus-pandemic.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01062020">
+        <h2> 01/04/2020 ~ 01/06/2020 - Day 5~7 </h2>
+
+        <p>01/05/2020</p>
+        <p>Wuhan Municipal Health Commission issued a third briefing. Till 8 am, 59 patients (7 in critical condition) were confirmed and 163 persons of close contacts was being monitored. Among the 59 patients, onset time varied from 12/12/2019 to 12/29/2019.</p>
+        <p>First virus strain was successfully isolated. Early investigations into the cause of the pneumonia ruled out seasonal flu, SARS and MERS.</p>
+        <p>Research team from Shanghai Public Health Clinical Center obtained the whole genome of the virus through high-throughput sequencing. Sequence analysis of the samples revealed 89.11% homology with SARS-like coronavirus. The agency immediately reported possible respiratory transmission to the National Health Commission.</p>
+        <p><img src="images/chinastory/china01062020.jpg" width='100%'></p>
+        <p>WHO issued disease outbreak news urging emergency preparedness.</p>
+        <p>01/06/2020</p>
+        <p>China CDC launches secondary emergency response.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020010509020'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020010509020</a></li>
+          <li><a href='https://www.ncbi.nlm.nih.gov/nuccore/MN908947'>https://www.ncbi.nlm.nih.gov/nuccore/MN908947</a></li>
+          <li><a href='https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/'>https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/</a></li>
+          <li>Li, Q., Guan, X., Wu, P., Wang, X., Zhou, L., Tong, Y., ... & Xing, X. (2020). Early transmission dynamics in Wuhan, China, of novel coronavirus–infected pneumonia. New England Journal of Medicine.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01072020">
+        <h2> 01/07/2020 - Day 8 </h2>
+
+        <p>President Xi Jinping raised demand on the prevention and control of the pneumonia in Wuhan in a Politburo Standing Committee of the Communist Party of China meeting.</p>
+        <p>Scientists of IVDC confirmed the novel coronavirus isolated on Jan. 3 was the pathogenic cause of the viral pneumonia of unknown etiology (VPUE) cluster, and the disease has been designated novel coronavirus-infected pneumonia (NCIP). Scientists announced the discovery of a new coronavirus.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://cpc.people.com.cn/n1/2020/0216/c164113-31589205.html'>http://cpc.people.com.cn/n1/2020/0216/c164113-31589205.html</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/09/c_1125438971.htm'>http://www.xinhuanet.com/2020-01/09/c_1125438971.htm</a></li>
+          <li>Wang, C., Horby, P. W., Hayden, F. G., & Gao, G. F. (2020). A novel coronavirus outbreak of global health concern. The Lancet, 395(10223), 470-473.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01092020">
+        <h2> 01/09/2020 - Day 10 </h2>
+
+        <p><b>The first death</b> from the virus occurred in a 61-year-old man who was a regular customer at Huanan Seafood market.</p>
+        <p>Chinese scientists interviewed by Xinhua News Agency announced they have detected a new coronavirus in the laboratory. The virus has been tested positive in 15 patients with the illness, and thus has been preliminarily identified as the pathogen for the outbreak.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.nhc.gov.cn/yjb/s3578/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml'>http://www.nhc.gov.cn/yjb/s3578/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/09/c_1125438971.htm'>http://www.xinhuanet.com/2020-01/09/c_1125438971.htm</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01102020">
+        <h2> 01/10/2020 - Day 11 </h2>
+        <p><img src="images/chinastory/china01102020.jpg" width='100%'></p>
+        <p><b>Chunyun (Spring Festival travel season)</b> started. During the following 40 days, China would have an estimated 3 billion travelers.</p>
+        <p><img src="images/chinastory/china01102020.png" width='100%'></p>
+        <p>WHO released several interim guidance documents including Surveillance case definitions for human infection with novel coronavirus and Laboratory testing of human suspected cases of novel coronavirus (nCoV) infection, showing early efforts on the detection of the coronavirus and invoking Chinese government reports that there was no clear evidence of human-to-human transmission.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.xinhuanet.com/fortune/2020-01/10/c_1125444131.htm'>http://www.xinhuanet.com/fortune/2020-01/10/c_1125444131.htm</a></li>
+          <li><a href='https://apps.who.int/iris/handle/10665/330376'>https://apps.who.int/iris/handle/10665/330376</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01112020">
+        <h2> 01/11/2020 - Day 12 </h2>
+        <p>Fourth briefing from Wuhan Municipal Health Commission: among 41 confirmed cases, 2 have been cured, 7 were in critical condition and 1 died. All 739 close contacts of the 41 confirmed cases, including 419 healthcare workers have been monitored. <b>No new cases reported after Jan 3</b>.</p>
+        <p><img src="images/chinastory/china01112020.jpg" width='100%'></p>
+        <p><b>The first viral genome sequence was shared to GENBANK and Virological.org</b> (hub for prepublication data designed to assist with public health activities and research) by Professor Zhang Yongzhen of the Shanghai Public Health Clinical Centre.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.cidrap.umn.edu/news-perspective/2020/01/china-releases-genetic-data-new-coronavirus-now-deadly'>https://www.cidrap.umn.edu/news-perspective/2020/01/china-releases-genetic-data-new-coronavirus-now-deadly</a></li>
+          <li><a href='https://mp.weixin.qq.com/s/0QwyA3m4U-kahPQW4UMoSw'>https://mp.weixin.qq.com/s/0QwyA3m4U-kahPQW4UMoSw</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01122020">
+        <h2> 01/12/2020 - Day 13 </h2>
+        <p>Fifth briefing from Wuhan Municipal Health Commission: among 41 confirmed cases, 6 cured, 7 were in critical condition and 1 died. Among 763 close contacts, 46 have been freed from medical observations (Since then it continued to report every day.)</p>
+        <p>WHO received further detailed information from the National Health Commission about the outbreak. The evidence was highly suggestive that the outbreak was associated with exposures in Huanan Seafood Market in Wuhan. <b>At this stage, there was no infection among healthcare workers, and no clear evidence of human to human transmission.</b></p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020011209037'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020011209037</a></li>
+          <li><a href='https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/'>https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01132020">
+        <h2> 01/13/2020 - Day 14 </h2>
+        <p><img src="images/chinastory/china01132020.jpeg" width='100%'></p>
+        <p><b>Thailand witnessed the first confirmed case outside China</b>. The affected 61-year-old Chinese woman, who is a resident of Wuhan, had not visited the Huanan Seafood Wholesale Market. She had arrived in Bangkok on Jan. 8.</p>
+        <video width="100%" height="100%" controls>
+        <source src="data/china01132020.mp4" type="video/mp4">
+        </video>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/'>https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/</a></li>
+          <li><a href='https://www.businessinsider.com/coronavirus-pandemic-timeline-history-major-events-2020-3'>https://www.businessinsider.com/coronavirus-pandemic-timeline-history-major-events-2020-3</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01152020">
+        <h2> 01/15/2020 - Day 16 </h2>
+        <p>Wuhan Municipal Health Committee published a Q&A regarding the coronavirus, stating: <b>"current investigation hasn't found clear evidence of human to human transmission, however, the possibility of human to human transmission cannot be ruled out."</b> A confirmed case of a couple might indicate family clusters.</p>
+        <p>China CDC raised the emergency response to <b>level 1</b>.</p>
+        <p><img src="images/chinastory/china01152020.jpg" width='100%'></p>
+        <p><b>The first known travel-related case of 2019 novel coronavirus entered the United States</b>. The patient from Washington with confirmed 2019-nCoV infection returned to the United States from Wuhan on January 15, 2020.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_11809/202001/t20200119_211280.html'>http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_11809/202001/t20200119_211280.html</a></li>
+          <li>Li, Q., Guan, X., Wu, P., Wang, X., Zhou, L., Tong, Y., ... & Xing, X. (2020). Early transmission dynamics in Wuhan, China, of novel coronavirus–infected pneumonia. New England Journal of Medicine.</li>
+          <li><a href='https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html'>https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html</a></li>
+          <li><a href='https://www.nytimes.com/article/coronavirus-timeline.html'>https://www.nytimes.com/article/coronavirus-timeline.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01162020">
+        <h2> 01/16/2020 - Day 17 </h2>
+        <p><img src="images/chinastory/china01162020.jpg" width='100%'></p>
+        <p><b>Japan confirmed first case of new China coronavirus strain</b>. 30-year-old man tested positive to illness after visiting Wuhan.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.theguardian.com/world/2020/jan/16/japan-confirms-first-case-of-new-china-coronavirus-strain'>https://www.theguardian.com/world/2020/jan/16/japan-confirms-first-case-of-new-china-coronavirus-strain</a></li>
+          <li><a href='https://www.independent.co.uk/news/world/asia/japan-coronavirus-china-pneumonia-sars-outbreak-latest-a9285816.html'>https://www.independent.co.uk/news/world/asia/japan-coronavirus-china-pneumonia-sars-outbreak-latest-a9285816.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01182020">
+        <h2> 01/17/2020~01/18/2020 - Day 18~19 </h2>
+        <p>01/17/2020</p>
+        <p><img src="images/chinastory/china01172020.jpg" width='100%'></p>
+        <p>The third meeting of the 13th National People's Congress of Hubei Province closed successfully in the Hongshan Auditorium in Wuchang.</p>
+        <br>
+        <p>01/18/2020</p>
+        <p><img src="images/chinastory/china01182020.jpeg" width='100%'></p>
+        <p>The Thousands of Households Banquet was held in the Baibuting community for pre-celebration (one week before Chinese New Year) with forty thousand families in attendance.</p>
+        <p>China confirmed a <b>second death</b> (69-year-old man) in the pneumonia outbreak.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.hubei.gov.cn/zwgk/hbyw/hbywqb/202001/t20200118_1997134.shtml'>http://www.hubei.gov.cn/zwgk/hbyw/hbywqb/202001/t20200118_1997134.shtml</a></li>
+          <li><a href='https://www.scmp.com/news/china/society/article/3049173/coronavirus-10-new-cases-confirmed-30-more-suspected-wuhan-after'>https://www.scmp.com/news/china/society/article/3049173/coronavirus-10-new-cases-confirmed-30-more-suspected-wuhan-after</a></li>
+          <li><a href='https://www.reuters.com/article/us-china-health-pneumonia-idUSKBN1ZG01B'>https://www.reuters.com/article/us-china-health-pneumonia-idUSKBN1ZG01B</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01192020">
+        <h2> 01/19/2020 - Day 20 </h2>
+        <p><img src="images/chinastory/china01192020.jpg" width='100%'></p>
+        <p><b>After the first 41 laboratory-confirmed cases identified on January 2, officials announced no new cases for the next 16 days, but suddenly the eleventh briefing from Wuhan Municipal Health Commission reported 17 additional laboratory-confirmed cases (3 in critical condition), bringing the total number to 62 (Jan. 19).</b> </p>
+        <p>Wuhan Municipal Health Commission also held a press conference to answer reporters' questions regarding the comprehensive prevention and control of pneumonia caused by new coronavirus infection in Wuhan. <b>Director of Wuhan CDC responded that the possibility of human-to-human transmission could not be ruled out, but the risk of continuing human-to-human transmission was relatively low</b>. Specimens of viral pneumonia patients were going through pathogenic tests only when Hubei CDC received the kits on Jan 16.</p>
+        <p><img src="images/chinastory/china011920202.webp" width='100%'></p>
+        <p>China sent a high-level <b>expert panel</b> from the National Health Commission to Wuhan for investigation. The team was led by Zhong Nanshan, academician of the Chinese Academy of Engineering(CAE), team member including Li Lanjuan (CAE), Yuan Guoyong (CAE), Gao Fu, director of China CDC, Zeng Guang, (Chief Scientist of Epidemiology, China CDC) and Du Bin, Director of Department of Critical Care Medicine, Peking Union Medical College Hospital.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.theguardian.com/world/2020/jan/19/coronavirus-china-reports-17-new-cases-of-sars-like-mystery-virus'>https://www.theguardian.com/world/2020/jan/19/coronavirus-china-reports-17-new-cases-of-sars-like-mystery-virus</a></li>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020011909074'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020011909074</a></li>
+          <li><a href='http://m.news.cctv.com/2020/01/19/ARTIUP2dOqJkOoNNkzJpXOQy200119.shtml'>http://m.news.cctv.com/2020/01/19/ARTIUP2dOqJkOoNNkzJpXOQy200119.shtml</a></li>
+          <li><a href='https://mp.weixin.qq.com/s/dOfUWIwnYhGIm9eH7atbyQ'>https://mp.weixin.qq.com/s/dOfUWIwnYhGIm9eH7atbyQ</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01202020">
+        <h2> 01/20/2020 - Day 21 </h2>
+        <p>12<sup>th</sup> statement from Wuhan Municipal Health Commission: 136 new confirmed cases during the last 2 days, age of which varied from 25 to 89.</p>
+        <p><img src="images/chinastory/china01062020.jpg" width='100%'></p>
+        <p>With the consent of the Chinese government, WHO sent a five-member delegation led by WHO's representative in China, Dr. Gauden Galea to Wuhan for a two-day investigation (January 20- 21). The delegation visited the Wuhan Tianhe Airport, Zhongnan hospital, Hubei provincial CDC, including the BSL3 laboratory in China CDC.</p>
+        <p><img src="images/chinastory/china01202020.jpg" width='100%'></p>
+        <p>The high-level expert panel of the National Health Commission answered reporters' questions about pneumonia caused by new coronavirus. <b>Zhong Nanshan confirmed the person-to-person transmission and the infection of healthcare workers. These key opinions were immediately sent to the National Health Commissions and reported to the State Council.</b></p>
+        <p>Chinese Communist Party general secretary, President of China, <b>Xi Jinping</b> gave important instruction on the pneumonia and said <b>“people’s lives and health should be given top priority and the spread of the outbreak should be resolutely curbed.”</b> </p>
+        <p>The Premier of the State Council <b>Li Keqiang</b> presided over the convening of an executive meeting of the State Council, during which he urged decisive and effective efforts to prevent and control the pneumonia outbreak caused by a novel coronavirus. Zhong Nanshan and Li Lanjuan also attended the meeting. <b>Li Lanjuan suggested taking measures to restrict people in and out of Wuhan City.</b></p>
+        <p><img src="images/chinastory/china012020202.png" width='100%'></p>
+        <p>China Central Television (CCTV) reported President Xi Jinping’s instructions on the pneumonia outbreak. A special program of CCTV, News 1+1, was set up today to fight the pneumonia outbreak. CCTV reporter Bai Yansong had a live interview with Zhong Nanshan, who spoke in front of public of the human-to-human transmission, warned people to avoid traveling to Wuhan and suggested wearing masks.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020012009077'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020012009077</a></li>
+          <li><a href='https://www.who.int/china/news/detail/22-01-2020-field-visit-wuhan-china-jan-2020'>https://www.who.int/china/news/detail/22-01-2020-field-visit-wuhan-china-jan-2020</a></li>
+          <li><a href='https://www.chinadaily.com.cn/a/202001/21/WS5e26556ca31012821727269c.html'>https://www.chinadaily.com.cn/a/202001/21/WS5e26556ca31012821727269c.html</a></li>
+          <li><a href='http://www.gov.cn/xinwen/2020-01/20/content_5471057.htm'>http://www.gov.cn/xinwen/2020-01/20/content_5471057.htm</a></li>
+          <li><a href='http://m.news.cctv.com/2020/01/20/ARTIF4Fl7LEu8TRqIsnde93B200120.shtml'>http://m.news.cctv.com/2020/01/20/ARTIF4Fl7LEu8TRqIsnde93B200120.shtml</a></li>
+          <li><a href='https://www.theguardian.com/world/2020/jan/20/coronavirus-spreads-to-beijing-as-china-confirms-new-cases'>https://www.theguardian.com/world/2020/jan/20/coronavirus-spreads-to-beijing-as-china-confirms-new-cases</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01212020">
+        <h2> 01/21/2020 - Day 22 </h2>
+        <p>The cultural performance of Hubei Province in celebration of Spring Festival (Chinese New Year) was successfully held in Hongshan Auditorium.</p>
+        <p><img src="images/chinastory/china01212020.png" width='100%'></p>
+        <p><b>China National Health Commission has released its first announcement</b>. A total of 291 cases have been reported across the country, including Hubei (270), Beijing (5) Guangdong (14) and Shanghai (2). 14 provinces reported a total of 54 suspected cases.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.gov.cn/gzdt/2012-01/21/content_2050796.htm'>http://www.gov.cn/gzdt/2012-01/21/content_2050796.htm</a></li>
+          <li><a href='http://www.nhc.gov.cn/xcs/yqtb/202001/930c021cdd1f46dc832fc27e0cc465c8.shtml'>http://www.nhc.gov.cn/xcs/yqtb/202001/930c021cdd1f46dc832fc27e0cc465c8.shtml</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01222020">
+        <h2> 01/22/2020 - Day 23 </h2>
+        <p>Hubei Province initiates <b>level 2</b> emergency response to public health emergencies. According to the regulations, the task of releasing new cases of pneumonia now moved to Hubei Provincial Health Commission instead of that of Wuhan City.</p>
+        <p>The Hubei Provincial Health Commission held the first press conference on the prevention and control of pneumonia outbreaks. A total of 444 confirmed cases were reported (28 cured, 17 death).</p>
+        <p><img src="images/chinastory/china01222020.jpg" width='100%'></p>
+        <p>Press Office of the State Council held a press conference on the prevention and control of pneumonia caused by new coronavirus.</p>
+        <p>North Korea temporarily closed its borders to all foreign tourists as a precaution to the coronavirus on Jan 22.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020012209088'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020012209088</a></li>
+          <li><a href='https://www.reuters.com/article/us-health-coronavirus-china-toll/chinas-wuhan-closes-coronavirus-hospital-as-officials-hail-drop-in-new-cases-idUSKBN20P01K'>https://www.reuters.com/article/us-health-coronavirus-china-toll/chinas-wuhan-closes-coronavirus-hospital-as-officials-hail-drop-in-new-cases-idUSKBN20P01K</a></li>
+          <li><a href='http://wjw.hubei.gov.cn/fbjd/dtyw/202001/t20200130_2016538.shtml'>http://wjw.hubei.gov.cn/fbjd/dtyw/202001/t20200130_2016538.shtml</a></li>
+          <li><a href='http://www.gov.cn/xinwen/2020-01/22/content_5471560.htm'>http://www.gov.cn/xinwen/2020-01/22/content_5471560.htm</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01232020">
+        <h2> 01/23/2020 - Day 24 </h2>
+        <p>2 days before Chinese New Year.</p>
+        <br>
+        <p><img src="images/chinastory/china01232020.jpg" width='100%'></p>
+        <p><b>Shutdown of Wuhan: Officials announced a quarantine of the greater Wuhan, China area to commence on Jan 23 2020 at 10:00 a.m. No traffic would be allowed in or out of the city, including all bus, metro and ferry lines.</b></p>
+        <p>The Wuhan Municipal Government promised to build an emergency hospital of 25,000 square meters and a capacity of 1,000 beds within 6 days. The construction would follow the model of Beijing Xiaotangshan that dealt with SARS in 2003.</p>
+        <p>National Health Commission released a detailed report of 17 death cases and published <i>Diagnosis and Treatment plan of the new coronavirus infected pneumonia (trial version 3)</i>.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.bjd.com.cn/a/202003/27/WS5e7dea1be4b03cc9592dadfb.html'>http://www.bjd.com.cn/a/202003/27/WS5e7dea1be4b03cc9592dadfb.html</a></li>
+          <li><a href='https://twitter.com/ChinaDaily/status/1220052882596286465'>https://twitter.com/ChinaDaily/status/1220052882596286465</a></li>
+          <li><a href='http://www.nhc.gov.cn/yzygj/s7653p/202001/f492c9153ea9437bb587ce2ffcbee1fa.shtml'>http://www.nhc.gov.cn/yzygj/s7653p/202001/f492c9153ea9437bb587ce2ffcbee1fa.shtml</a></li>
+          <li><a href='http://www.nhc.gov.cn/xcs/yqtb/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml'>http://www.nhc.gov.cn/xcs/yqtb/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml</a></li>
+          <li><a href='http://www.caac.gov.cn/XWZX/DFDT/202003/t20200311_201393.html'>http://www.caac.gov.cn/XWZX/DFDT/202003/t20200311_201393.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center">
+      <div class="chart-control-container"><div id="chart"></div></div>
+      </section>
+
+      <section class="center" id="credits">
+        <h4>About</h4>
+        <p>Powered by leaflet and D3.js</p>
+        <p>Authors: <a>Jinmeng Rao</a>, <a>Jianxiang Qiu</a>, <a>Griffin Rock</a></p>
+        <p>Department of Geography, UW-Madison</p>
+        <p><br></p>
+      </section>
+
+    </article>
+
+
+    <script src="lib/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <script src="lib/leaflet/leaflet-src.js" type="text/javascript"></script>
+    <script src="lib/leaflet/leaflet.js" type="text/javascript"></script>
+    <script src="lib/leaflet/leaflet-providers.js" type="text/javascript"></script>
+    <script src="lib/scroll-monitor.js" type="text/javascript"></script>
+    <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="lib/d3.js" type="text/javascript"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="lib/c3/c3.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="lib/agency.js"></script>
+
+    <script src="js/geojsonfeature.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+
+  </div>
+
+
+</body>
+</html>
