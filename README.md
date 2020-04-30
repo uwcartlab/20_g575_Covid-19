@@ -1,7 +1,9 @@
 # Update
 
 The code for 75% check-in is updated to the repo.
+
 The progress List: https://github.com/uwcartlab/20_g575_Covid-19/blob/master/Final%20Project%20Progress%20List.pdf
+
 For your convenience, we also deploy the current 75% check-in version on our server: http://www.jinmengrao.com/covid-19
 
 
