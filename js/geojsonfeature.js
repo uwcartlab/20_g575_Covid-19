@@ -55,18 +55,6 @@ var chinacdcFeature_emerres = {
     }
 };
 
-var uscdcFeature = {
-    "type": "Feature",
-    "properties": {
-        "name": "CDC of the U.S.",
-        "desc": "CDC of the U.S."
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [-76.9439282,38.8278915]
-    }
-};
-
 var sphccFeature = {
     "type": "Feature",
     "properties": {
@@ -340,5 +328,439 @@ var wuhanFeature_shutdown = {
     "geometry": {
         "type": "Point",
         "coordinates": [114.2617,30.6178]
+    }
+};
+
+
+//============================US==============================
+var waFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "Washington State",
+        "desc": "<p style='text-align:center'>Washington State</p><p style='text-align:center;color:red'>The first confirmed coronavirus case.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-120.844,47.273]
+    }
+};
+
+var chicagoFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "Chicago",
+        "desc": "<p style='text-align:center'>Chicago</p><p style='text-align:center;color:red'>The second confirmed coronavirus case.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-87.6257201,41.8757908]
+    }
+};
+
+var chicagoFeature_p2p = {
+    "type": "Feature",
+    "properties": {
+        "name": "Chicago",
+        "desc": "<p style='text-align:center'>Chicago</p><p style='text-align:center;color:red'>The first case of person-to-person transmission was confirmed in Chicago.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-87.6257201,41.8757908]
+    }
+};
+
+var calFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "California",
+        "desc": "<p style='text-align:center'>California State</p><p style='text-align:center;color:red'>The first confirmed case in California.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-119.274,37.2715]
+    }
+};
+
+var calFeature_13c = {
+    "type": "Feature",
+    "properties": {
+        "name": "California",
+        "desc": "<p style='text-align:center'>California State</p><p style='text-align:center;color:red'>The CDC confirmed the 13th U.S. coronavirus case.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-119.274,37.2715]
+    }
+};
+
+var calFeature_lt = {
+    "type": "Feature",
+    "properties": {
+        "name": "California",
+        "desc": "<p style='text-align:center'>California State</p><p style='text-align:center;color:red'>The CDC announces that a patient in California has tested positive for COVID-19, potentially the first US case where the source of infection is due to local transmission.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-119.274,37.2715]
+    }
+};
+
+var azFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "Arizona",
+        "desc": "<p style='text-align:center'>Arizona State</p><p style='text-align:center;color:red'>The first confirmed case in Arizona.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-111.9295,34.168]
+    }
+};
+
+var hhsFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Department of Health and Human Services",
+        "desc": "<p style='text-align:center'>Department of Health and Human Services</p><p style='text-align:center;color:red'>Alex Azar: the U.S. has been monitoring this virus and preparing a response since back in December.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0143086,38.8865663]
+    }
+};
+
+var hhsFeature_pubemer = {
+    "type": "Feature",
+    "properties": {
+        "name": "Department of Health and Human Services",
+        "desc": "<p style='text-align:center'>Department of Health and Human Services</p><p style='text-align:center;color:red'>Department of Health and Human Services declares a public health emergency.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0143086,38.8865663]
+    }
+};
+
+var hhsFeature_n95 = {
+    "type": "Feature",
+    "properties": {
+        "name": "Department of Health and Human Services",
+        "desc": "<p style='text-align:center'>Department of Health and Human Services</p><p style='text-align:center;color:red'>U.S. Department of Health & Human Services (HHS) announces the intend to procure N95 respirators over the following 18 months to support healthcare workers.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0143086,38.8865663]
+    }
+};
+
+var whFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "The White House",
+        "desc": "<p style='text-align:center'>The White House</p><p style='text-align:center;color:red'>The White House announces a taskforce to “monitor, contain and mitigate the spread of the virus”.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var whFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "The White House",
+        "desc": "<p style='text-align:center'>The White House</p><p style='text-align:center;color:red'>49 members of Congress sign a letter to CDC Director Redfield highlighting the urgency of distributing a rapid diagnostic kit that could be processed locally.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var congressFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Congress",
+        "desc": "<p style='text-align:center'>U.S. Congress</p><p style='text-align:center;color:red'>49 members of Congress sign a letter to CDC Director Redfield highlighting the urgency of distributing a rapid diagnostic kit that could be processed locally.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0090315,38.889797]
+    }
+};
+
+var wisFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "Wisconsin State",
+        "desc": "<p style='text-align:center'>Wisconsin State</p><p style='text-align:center;color:red'>Wisconsin’s first confirmed case.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-89.8265,44.7865]
+    }
+};
+
+var santacFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "First death from COVID-19",
+        "desc": "<p style='text-align:center'>First death from COVID-19</p><p style='text-align:center;color:red'>First death from COVID-19, in Santa Clara County, California, as found by an autopsy and as reported two months later.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-121.9123676,37.348148]
+    }
+};
+
+var uscdcFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. CDC",
+        "desc": "<p style='text-align:center'>U.S. CDC</p><p style='text-align:center;color:red'>U.S. health officials prepare for the coronavirus to become a pandemic.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0171759,38.8836242]
+    }
+};
+
+var uscdcFeature_nd = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. CDC",
+        "desc": "<p style='text-align:center'>U.S. CDC</p><p style='text-align:center;color:red'>The CDC issues a new guidance that allows anyone to be tested for the virus without restriction, instead of those only with severe symptoms.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0171759,38.8836242]
+    }
+};
+
+var uscdcFeature_half = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. CDC",
+        "desc": "<p style='text-align:center'>U.S. CDC</p><p style='text-align:center;color:red'>The CDC reports that the coronavirus now has confirmed cases in over half of the states in the US.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0171759,38.8836242]
+    }
+};
+
+var uscdcFeature_50 = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. CDC",
+        "desc": "<p style='text-align:center'>U.S. CDC</p><p style='text-align:center;color:red'>The CDC releases guidelines that recommend organizers cancel or postpone events of fifty people or more across the US for an eight-week period.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0171759,38.8836242]
+    }
+};
+
+var uscdcFeature_flaw = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. CDC",
+        "desc": "<p style='text-align:center'>U.S. CDC</p><p style='text-align:center;color:red'>Dr. Nancy Messonnier states that the CDC has taken steps to address problems with flawed test kits mailed to state and local labs.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0171759,38.8836242]
+    }
+};
+
+var usgovFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Government",
+        "desc": "<p style='text-align:center'>U.S. Government</p><p style='text-align:center;color:red'>The government evacuates 338 U.S. nationals stranded aboard the cruise ship Diamond Princess.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var usgovFeature_erf = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Government",
+        "desc": "<p style='text-align:center'>U.S. Government</p><p style='text-align:center;color:red'>The United States deploys <b>$37 million</b> from the Emergency Reserve Fund for Contagious Infectious Diseases for countries affected by COVID-19.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var usgovFeature_ef = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Government",
+        "desc": "<p style='text-align:center'>U.S. Government</p><p style='text-align:center;color:red'>President Trump signs an $8.3 billion emergency funding package to try and alleviate the COVID-19 crisis.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var usgovFeature_ban = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Government",
+        "desc": "<p style='text-align:center'>U.S. Government</p><p style='text-align:center;color:red'>President Trump decides to restrict travel from 26 countries in Europe, excluding the United Kingdom and Ireland for the next month.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var usgovFeature_ne = {
+    "type": "Feature",
+    "properties": {
+        "name": "U.S. Government",
+        "desc": "<p style='text-align:center'>U.S. Government</p><p style='text-align:center;color:red'>President Trump declares a national emergency due to the coronavirus.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0365712,38.8976649]
+    }
+};
+
+var wallstreetFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "New York Stock Exchange",
+        "desc": "<p style='text-align:center'>New York Stock Exchange</p><p style='text-align:center;color:red'>The US stock market plummets due to coronavirus fears.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-74.008802,40.70604]
+    }
+};
+
+var wallstreetFeature_again = {
+    "type": "Feature",
+    "properties": {
+        "name": "New York Stock Exchange",
+        "desc": "<p style='text-align:center'>New York Stock Exchange</p><p style='text-align:center;color:red'>Despite the Federal Reserve Bank lowered interest rates the day prior, the stock market fell once again.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-74.008802,40.70604]
+    }
+};
+
+var waFeature_1rd = {
+    "type": "Feature",
+    "properties": {
+        "name": "First reported death",
+        "desc": "<p style='text-align:center'>First reported death</p><p style='text-align:center;color:red'>The US government makes public what is then believed to be its first coronavirus-related death, a man in his 50s at Evergreen Health Medical Center in Kirkland, Washington.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.1796782,47.715643]
+    }
+};
+
+var waFeature_school = {
+    "type": "Feature",
+    "properties": {
+        "name": "Washington State",
+        "desc": "<p style='text-align:center'>Washington State</p><p style='text-align:center;color:red'>Washington state orders its schools closed for the rest of the school year.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.1796782,47.715643]
+    }
+};
+
+var riFeature_1c = {
+    "type": "Feature",
+    "properties": {
+        "name": "Rhode Island",
+        "desc": "<p style='text-align:center'>Rhode Island</p><p style='text-align:center;color:red'>The CDC confirms the first coronavirus cases in New Hampshire, New York, and Florida.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-71.5075,41.5865]
+    }
+};
+
+var ohioFeature_se = {
+    "type": "Feature",
+    "properties": {
+        "name": "Ohio",
+        "desc": "<p style='text-align:center'>Ohio State</p><p style='text-align:center;color:red'>Ohio Governor Mike DeWine declares a state of emergency after Ohio reports its first three cases of COVID-19.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-82.6695,40.1925]
+    }
+};
+
+var nbaFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "National Basketball Association",
+        "desc": "<p style='text-align:center'>National Basketball Association</p><p style='text-align:center;color:red'>The National Basketball Association (NBA) suspends its season after Rudy Gobert, an NBA player, contracts the disease.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-111.935453,40.6586638]
+    }
+};
+
+var wvFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "West Virginia State",
+        "desc": "<p style='text-align:center'>West Virginia State</p><p style='text-align:center;color:red'>West Virginia is now the only state without confirmed COVID-19 cases.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-80.179,38.92]
+    }
+};
+
+var wvFeature_final = {
+    "type": "Feature",
+    "properties": {
+        "name": "West Virginia State",
+        "desc": "<h5 style='text-align:center;color:red'>West Virginia State</h5><p style='text-align:center;color:red'>West Virginia, the last state without a confirmed COVID-19 case, finally records its first case, meaning the US now has infections in all 50 states, Puerto Rico, the US Virgin Islands, and Washington, DC.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-80.179,38.92]
+    }
+};
+
+var sfFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "San Francisco",
+        "desc": "<p style='text-align:center'>San Francisco</p><p style='text-align:center;color:red'>The first city in America to implement “stay-at-home” restrictions in response to the coronavirus.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-122.4726194,37.7577627]
+    }
+};
+
+var mlFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Maryland State",
+        "desc": "<p style='text-align:center'>Maryland State</p><p style='text-align:center;color:red'>Maryland’s governor postpones the state’s primary election due to concerns of people gathering to vote in person.</p>"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [-77.268,38.8175]
     }
 };

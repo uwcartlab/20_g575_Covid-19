@@ -1,0 +1,963 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width" name="viewport">
+  <title>COVID-19: How Did We Get Here?</title>
+  <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32" />
+  <link href="lib/c3/c3.min.css" rel="stylesheet">
+  <link href="lib/leaflet/leaflet.css" rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link href="css/agency.css" rel="stylesheet">
+  <link href="css/misc.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#intro">COVID-19</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#intro"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#background">Symptom</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#china">China: Wuhan 24 Days</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#us">US: A Nation in Lockdown</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#conclusion">Conclusion</a>
+                </li>
+                <li>
+                    <a id="about-button">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <div id="intro">
+    <h2><span> COVID-19: How Did We Get Here? </span></h2>
+    <h4>Map stories of the spread of coronavirus in China and the United States</h4>
+    <div id='intro-text'>Coronavirus disease 2019 (COVID-19) is an infectious disease that was first identified in December 2019 in Wuhan, China, and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic. Continue to learn more about the symptoms of COVID-19, the early spread of the virus in China and the United States, and the lessons we learned from it.</div>
+    <div class="arrow arrow-1"></div>
+    <div class="arrow arrow-2"></div>
+  </div>
+
+  <div id="wrapper">
+    <video id="background" width="100%" height="100%" controls>
+      <source src="data/background.mp4" type="video/mp4">
+    </video>
+      <!-- <h2>COVID-19: How Did We Get Here?</h2>
+      <h4>Map stories of the spread of coronavirus in China and the United States</h4> -->
+
+    <div id="map-canvas" class="leaflet-container leaflet-retina leaflet-fade-anim" tabindex="0"></div>
+
+    <article class="container">
+
+      <h1 id="china">China: Wuhan 24 Days</h1>
+
+      <section class="center" id="china12312019">
+        <h2> 12/31/2019 - Day 1 </h2>
+        <p>Wuhan Municipal Health Commission issued the <b>first</b> briefing on 27 cases (7 in critical condition) of pneumonia of unknown etiology detected in Wuhan City. Most of them had direct exposure to Huanan (South China) Seafood Market.</p>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989'>http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01012020">
+        <h2> 01/01/2020 - Day 2 </h2>
+        <p><img src="images/chinastory/china01012020.jpg" width='100%'></p>
+        <p>Public security Bureau of Wuhan summoned 8 of the citizens who were believed to have posted and forwarded “untrue” information on the Internet and caused adverse social impacts, including Dr Wenliang Li, who was later recognized as the whistleblower of the virus.</p>
+        <p>Huanan (South China) Seafood Market was closed on 01/01/2020 for sanitation and disinfection.</p>
+        <p>Since the causal agent has not yet been identified or confirmed, WHO requested further information from national authorities of China to assess the risk.</p>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989'>http://wjw.wuhan.gov.cn/front/web/showDetail/2019123108989</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/01/c_1125412773.htm'>http://www.xinhuanet.com/2020-01/01/c_1125412773.htm</a></li>
+          <li><a href='https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/'>https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01022020">
+        <h2> 01/02/2020 - Day 3 </h2>
+        <p><img src="images/chinastory/china01022020.jpg" width='100%'></p>
+        <p>Chinese Center for Disease Control and Prevention (China CDC) has received the first 4 specimens of pneumonia of unknown cause.<br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html'>http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01032020">
+        <h2> 01/03/2020 - Day 4 </h2>
+        <p><img src="images/chinastory/china01032020.jpg" width='100%'></p>
+        <p>Chinese scientists at the National Institute of Viral Disease Control and Prevention (IVDC) under China CDC have completed the genetic sequencing of the first batch of specimens and ruled out the possibilities for 26 common respiratory pathogens. Comparative genomics study showed a novel β-genus coronavirus.</p>
+        <p>Wuhan Municipal Health Commission issued a second briefing. A total of 44 cases (11 in critical condition) were confirmed and 121 close contacts of the cases was being monitored till 8 am. Primary investigations found <b>no obvious evidence of interpersonal transmission</b>.</p>
+        <p><b>China formally notified the U.S. on the outbreak</b>. At a White House briefing on March 20, Health and Human Services Secretary Alex Azar said officials had been alerted to the initial reports of the virus by discussions between CDC director Robert Redfield and Chinese CDC Director Dr. Gao on January 3.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html'>http://www.chinacdc.cn/yw_9324/202002/t20200201_212137.html</a></li>
+          <li>Li, Q. (2020). An outbreak of NCIP (2019-nCoV) infection in China—Wuhan, Hubei Province, 2019–2020. China CDC Weekly, 2, 79-80.</li>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020010309017'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020010309017</a></li>
+          <li><a href='https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html'>https://www.washingtonpost.com/national-security/us-intelligence-reports-from-january-and-february-warned-about-a-likely-pandemic/2020/03/20/299d8cda-6ad5-11ea-b5f1-a5a804158597_story.html</a></li>
+          <li><a href='https://www.nytimes.com/2020/03/28/us/testing-coronavirus-pandemic.html'>https://www.nytimes.com/2020/03/28/us/testing-coronavirus-pandemic.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01062020">
+        <h2> 01/04/2020 ~ 01/06/2020 - Day 5~7 </h2>
+
+        <p>01/05/2020</p>
+        <p>Wuhan Municipal Health Commission issued a third briefing. Till 8 am, 59 patients (7 in critical condition) were confirmed and 163 persons of close contacts were being monitored. Among the 59 patients, onset time varied from 12/12/2019 to 12/29/2019.</p>
+        <p>First virus strain was successfully isolated. Early investigations into the cause of the pneumonia ruled out seasonal flu, SARS and MERS.</p>
+        <p>Research team from Shanghai Public Health Clinical Center obtained the whole genome of the virus through high-throughput sequencing. Sequence analysis of the samples revealed 89.11% homology with SARS-like coronavirus. The agency immediately reported possible respiratory transmission to the National Health Commission.</p>
+        <p><img src="images/chinastory/china01062020.jpg" width='100%'></p>
+        <p>WHO issued disease outbreak news urging emergency preparedness.</p>
+        <p>01/06/2020</p>
+        <p>China CDC launches secondary emergency response.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020010509020'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020010509020</a></li>
+          <li><a href='https://www.ncbi.nlm.nih.gov/nuccore/MN908947'>https://www.ncbi.nlm.nih.gov/nuccore/MN908947</a></li>
+          <li><a href='https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/'>https://www.who.int/csr/don/05-january-2020-pneumonia-of-unkown-cause-china/en/</a></li>
+          <li>Li, Q., Guan, X., Wu, P., Wang, X., Zhou, L., Tong, Y., ... & Xing, X. (2020). Early transmission dynamics in Wuhan, China, of novel coronavirus–infected pneumonia. New England Journal of Medicine.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01072020">
+        <h2> 01/07/2020 - Day 8 </h2>
+
+        <p>President Xi Jinping raised demand on the prevention and control of the pneumonia in Wuhan in a Politburo Standing Committee of the Communist Party of China meeting.</p>
+        <p>Scientists of IVDC confirmed the novel coronavirus isolated on January 3 was the pathogenic cause of the viral pneumonia of unknown etiology (VPUE) cluster, and the disease has been designated as a novel coronavirus-infected pneumonia (NCIP). Scientists announced the discovery of a new coronavirus.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://cpc.people.com.cn/n1/2020/0216/c164113-31589205.html'>http://cpc.people.com.cn/n1/2020/0216/c164113-31589205.html</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/09/c_1125438971.htm'>http://www.xinhuanet.com/2020-01/09/c_1125438971.htm</a></li>
+          <li>Wang, C., Horby, P. W., Hayden, F. G., & Gao, G. F. (2020). A novel coronavirus outbreak of global health concern. The Lancet, 395(10223), 470-473.</li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01092020">
+        <h2> 01/09/2020 - Day 10 </h2>
+
+        <p><b>The first death</b> from the virus occurred when a 61-year-old man passed away. He was was a regular customer at the Huanan Seafood market.</p>
+        <p>Chinese scientists interviewed by Xinhua News Agency announced they have detected a new coronavirus in the laboratory. The virus has been tested positive in 15 patients with the illness, and thus has been preliminarily identified as the pathogen for the outbreak.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.nhc.gov.cn/yjb/s3578/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml'>http://www.nhc.gov.cn/yjb/s3578/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml</a></li>
+          <li><a href='http://www.xinhuanet.com/2020-01/09/c_1125438971.htm'>http://www.xinhuanet.com/2020-01/09/c_1125438971.htm</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01102020">
+        <h2> 01/10/2020 - Day 11 </h2>
+        <p><img src="images/chinastory/china01102020.jpg" width='100%'></p>
+        <p><b>Chunyun (Spring Festival travel season)</b> started. During the following 40 days, China would have an estimated 3 billion travelers.</p>
+        <p><img src="images/chinastory/china01102020.png" width='100%'></p>
+        <p>WHO released several interim guidance documents including surveillance case definitions for human infections with novel coronavirus and laboratory testing of human suspected cases of novel coronavirus (nCoV) infection, showing early efforts on the detection of the coronavirus and invoking Chinese government reports that there was no clear evidence of human-to-human transmission.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.xinhuanet.com/fortune/2020-01/10/c_1125444131.htm'>http://www.xinhuanet.com/fortune/2020-01/10/c_1125444131.htm</a></li>
+          <li><a href='https://apps.who.int/iris/handle/10665/330376'>https://apps.who.int/iris/handle/10665/330376</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01112020">
+        <h2> 01/11/2020 - Day 12 </h2>
+        <p>Fourth briefing from Wuhan Municipal Health Commission: among 41 confirmed cases, 2 have been cured, 7 were in critical condition and 1 died. All 739 close contacts of the 41 confirmed cases, including 419 healthcare workers have been monitored. <b>No new cases reported after January 3</b>.</p>
+        <p><img src="images/chinastory/china01112020.jpg" width='100%'></p>
+        <p><b>The first viral genome sequence was shared to GENBANK and Virological.org</b> (hub for prepublication data designed to assist with public health activities and research) by Professor Zhang Yongzhen of the Shanghai Public Health Clinical Centre.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.cidrap.umn.edu/news-perspective/2020/01/china-releases-genetic-data-new-coronavirus-now-deadly'>https://www.cidrap.umn.edu/news-perspective/2020/01/china-releases-genetic-data-new-coronavirus-now-deadly</a></li>
+          <li><a href='https://mp.weixin.qq.com/s/0QwyA3m4U-kahPQW4UMoSw'>https://mp.weixin.qq.com/s/0QwyA3m4U-kahPQW4UMoSw</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01122020">
+        <h2> 01/12/2020 - Day 13 </h2>
+        <p>Fifth briefing from Wuhan Municipal Health Commission: among 41 confirmed cases, 6 cured, 7 were in critical condition and 1 died. Among 763 close contacts, 46 have been freed from medical observations (Since then the briefing continued to be reported every day.)</p>
+        <p>WHO received further detailed information from the National Health Commission about the outbreak. The evidence was highly suggestive that the outbreak was associated with exposures in Huanan Seafood Market in Wuhan. <b>At this stage, there was no infection among healthcare workers, and no clear evidence of human-to-human transmission.</b></p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020011209037'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020011209037</a></li>
+          <li><a href='https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/'>https://www.who.int/csr/don/12-january-2020-novel-coronavirus-china/en/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01132020">
+        <h2> 01/13/2020 - Day 14 </h2>
+        <p><img src="images/chinastory/china01132020.jpeg" width='100%'></p>
+        <p><b>Thailand witnessed the first confirmed case outside China</b>. The affected 61-year-old Chinese woman, who was a resident of Wuhan, had not visited the Huanan Seafood Wholesale Market. She had arrived in Bangkok on January 8.</p>
+        <video width="100%" height="100%" controls>
+        <source src="data/china01132020.mp4" type="video/mp4">
+        </video>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/'>https://www.who.int/csr/don/14-january-2020-novel-coronavirus-thailand-ex-china/en/</a></li>
+          <li><a href='https://www.businessinsider.com/coronavirus-pandemic-timeline-history-major-events-2020-3'>https://www.businessinsider.com/coronavirus-pandemic-timeline-history-major-events-2020-3</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01152020">
+        <h2> 01/15/2020 - Day 16 </h2>
+        <p>Wuhan Municipal Health Committee published a Q&A regarding the coronavirus, stating: <b>"current investigation hasn't found clear evidence of human-to-human transmission, however, the possibility of human-to-human transmission cannot be ruled out."</b> A confirmed case of a couple might indicate family clusters.</p>
+        <p>China CDC raised the emergency response to <b>level 1</b>.</p>
+        <p><img src="images/chinastory/china01152020.jpg" width='100%'></p>
+        <p><b>The first known travel-related case of 2019 novel coronavirus entered the United States</b>. The patient from Washington with confirmed 2019-nCoV infection returned to the United States from Wuhan on January 15, 2020.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_11809/202001/t20200119_211280.html'>http://www.chinacdc.cn/jkzt/crb/zl/szkb_11803/jszl_11809/202001/t20200119_211280.html</a></li>
+          <li>Li, Q., Guan, X., Wu, P., Wang, X., Zhou, L., Tong, Y., ... & Xing, X. (2020). Early transmission dynamics in Wuhan, China, of novel coronavirus–infected pneumonia. New England Journal of Medicine.</li>
+          <li><a href='https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html'>https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html</a></li>
+          <li><a href='https://www.nytimes.com/article/coronavirus-timeline.html'>https://www.nytimes.com/article/coronavirus-timeline.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01162020">
+        <h2> 01/16/2020 - Day 17 </h2>
+        <p><img src="images/chinastory/china01162020.jpg" width='100%'></p>
+        <p><b>Japan confirmed first case of new China coronavirus strain</b>. 30-year-old man tested positive to illness after visiting Wuhan.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.theguardian.com/world/2020/jan/16/japan-confirms-first-case-of-new-china-coronavirus-strain'>https://www.theguardian.com/world/2020/jan/16/japan-confirms-first-case-of-new-china-coronavirus-strain</a></li>
+          <li><a href='https://www.independent.co.uk/news/world/asia/japan-coronavirus-china-pneumonia-sars-outbreak-latest-a9285816.html'>https://www.independent.co.uk/news/world/asia/japan-coronavirus-china-pneumonia-sars-outbreak-latest-a9285816.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01182020">
+        <h2> 01/17/2020~01/18/2020 - Day 18~19 </h2>
+        <p>01/17/2020</p>
+        <p><img src="images/chinastory/china01172020.jpg" width='100%'></p>
+        <p>The third meeting of the 13th National People's Congress of Hubei Province closed successfully in the Hongshan Auditorium in Wuchang.</p>
+        <br>
+        <p>01/18/2020</p>
+        <p><img src="images/chinastory/china01182020.jpeg" width='100%'></p>
+        <p>The Thousands of Households Banquet was held in the Baibuting community for pre-celebration (one week before Chinese New Year) with forty thousand families in attendance.</p>
+        <p>China confirmed a <b>second death</b> (69-year-old man) in the pneumonia outbreak.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.hubei.gov.cn/zwgk/hbyw/hbywqb/202001/t20200118_1997134.shtml'>http://www.hubei.gov.cn/zwgk/hbyw/hbywqb/202001/t20200118_1997134.shtml</a></li>
+          <li><a href='https://www.scmp.com/news/china/society/article/3049173/coronavirus-10-new-cases-confirmed-30-more-suspected-wuhan-after'>https://www.scmp.com/news/china/society/article/3049173/coronavirus-10-new-cases-confirmed-30-more-suspected-wuhan-after</a></li>
+          <li><a href='https://www.reuters.com/article/us-china-health-pneumonia-idUSKBN1ZG01B'>https://www.reuters.com/article/us-china-health-pneumonia-idUSKBN1ZG01B</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01192020">
+        <h2> 01/19/2020 - Day 20 </h2>
+        <p><img src="images/chinastory/china01192020.jpg" width='100%'></p>
+        <p><b>After the first 41 laboratory-confirmed cases identified on January 2, officials announced no new cases for the next 16 days, but suddenly the eleventh briefing from Wuhan Municipal Health Commission reported 17 additional laboratory-confirmed cases (3 in critical condition), bringing the total number to 62 (January 19).</b> </p>
+        <p>Wuhan Municipal Health Commission also held a press conference to answer reporters' questions regarding the comprehensive prevention and control of pneumonia caused by new coronavirus infection in Wuhan. <b>Director of Wuhan CDC responded that the possibility of human-to-human transmission could not be ruled out, but the risk of continuing human-to-human transmission was relatively low</b>. Specimens of viral pneumonia patients were going through pathogenic tests only when Hubei CDC received the kits on January 16.</p>
+        <p><img src="images/chinastory/china011920202.webp" width='100%'></p>
+        <p>China sent a high-level <b>expert panel</b> from the National Health Commission to Wuhan for investigation. The team was led by Zhong Nanshan, academician of the Chinese Academy of Engineering(CAE), team member including Li Lanjuan (CAE), Yuan Guoyong (CAE), Gao Fu, director of China CDC, Zeng Guang, (Chief Scientist of Epidemiology, China CDC) and Du Bin, Director of Department of Critical Care Medicine, Peking Union Medical College Hospital.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.theguardian.com/world/2020/jan/19/coronavirus-china-reports-17-new-cases-of-sars-like-mystery-virus'>https://www.theguardian.com/world/2020/jan/19/coronavirus-china-reports-17-new-cases-of-sars-like-mystery-virus</a></li>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020011909074'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020011909074</a></li>
+          <li><a href='http://m.news.cctv.com/2020/01/19/ARTIUP2dOqJkOoNNkzJpXOQy200119.shtml'>http://m.news.cctv.com/2020/01/19/ARTIUP2dOqJkOoNNkzJpXOQy200119.shtml</a></li>
+          <li><a href='https://mp.weixin.qq.com/s/dOfUWIwnYhGIm9eH7atbyQ'>https://mp.weixin.qq.com/s/dOfUWIwnYhGIm9eH7atbyQ</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01202020">
+        <h2> 01/20/2020 - Day 21 </h2>
+        <p>12<sup>th</sup> statement from Wuhan Municipal Health Commission: 136 new confirmed cases during the last 2 days, age of which varied from 25 to 89.</p>
+        <p><img src="images/chinastory/china01062020.jpg" width='100%'></p>
+        <p>With the consent of the Chinese government, WHO sent a five-member delegation led by WHO's representative in China, Dr. Gauden Galea to Wuhan for a two-day investigation (January 20-21). The delegation visited the Wuhan Tianhe Airport, Zhongnan hospital, and the Hubei provincial CDC, including the BSL3 laboratory in China CDC.</p>
+        <p><img src="images/chinastory/china01202020.jpg" width='100%'></p>
+        <p>The high-level expert panel of the National Health Commission answered reporters' questions about pneumonia caused by the new coronavirus. <b>Zhong Nanshan confirmed the person-to-person transmission and the infection of healthcare workers. These key opinions were immediately sent to the National Health Commissions and reported to the State Council.</b></p>
+        <p>Chinese Communist Party general secretary, President of China, <b>Xi Jinping</b> gave important instruction on the pneumonia and said <b>“people’s lives and health should be given top priority and the spread of the outbreak should be resolutely curbed.”</b> </p>
+        <p>The Premier of the State Council <b>Li Keqiang</b> presided over the convening of an executive meeting of the State Council, during which he urged decisive and effective efforts to prevent and control the pneumonia outbreak caused by a novel coronavirus. Zhong Nanshan and Li Lanjuan also attended the meeting. <b>Li Lanjuan suggested taking measures to restrict people in and out of Wuhan City.</b></p>
+        <p><img src="images/chinastory/china012020202.png" width='100%'></p>
+        <p>China Central Television (CCTV) reported President Xi Jinping’s instructions on the pneumonia outbreak. A special program of CCTV, News 1+1, was set up today to fight the pneumonia outbreak. CCTV reporter Bai Yansong had a live interview with Zhong Nanshan, who spoke in front of public of the human-to-human transmission, and warned people to avoid traveling to Wuhan and suggested wearing masks.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020012009077'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020012009077</a></li>
+          <li><a href='https://www.who.int/china/news/detail/22-01-2020-field-visit-wuhan-china-jan-2020'>https://www.who.int/china/news/detail/22-01-2020-field-visit-wuhan-china-jan-2020</a></li>
+          <li><a href='https://www.chinadaily.com.cn/a/202001/21/WS5e26556ca31012821727269c.html'>https://www.chinadaily.com.cn/a/202001/21/WS5e26556ca31012821727269c.html</a></li>
+          <li><a href='http://www.gov.cn/xinwen/2020-01/20/content_5471057.htm'>http://www.gov.cn/xinwen/2020-01/20/content_5471057.htm</a></li>
+          <li><a href='http://m.news.cctv.com/2020/01/20/ARTIF4Fl7LEu8TRqIsnde93B200120.shtml'>http://m.news.cctv.com/2020/01/20/ARTIF4Fl7LEu8TRqIsnde93B200120.shtml</a></li>
+          <li><a href='https://www.theguardian.com/world/2020/jan/20/coronavirus-spreads-to-beijing-as-china-confirms-new-cases'>https://www.theguardian.com/world/2020/jan/20/coronavirus-spreads-to-beijing-as-china-confirms-new-cases</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01212020">
+        <h2> 01/21/2020 - Day 22 </h2>
+        <p>The cultural performance of Hubei Province in celebration of Spring Festival (Chinese New Year) was successfully held in Hongshan Auditorium.</p>
+        <p><img src="images/chinastory/china01212020.png" width='100%'></p>
+        <p><b>China National Health Commission has released its first announcement</b>. A total of 291 cases have been reported across the country, including Hubei (270), Beijing (5) Guangdong (14) and Shanghai (2). 14 provinces reported a total of 54 suspected cases.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.gov.cn/gzdt/2012-01/21/content_2050796.htm'>http://www.gov.cn/gzdt/2012-01/21/content_2050796.htm</a></li>
+          <li><a href='http://www.nhc.gov.cn/xcs/yqtb/202001/930c021cdd1f46dc832fc27e0cc465c8.shtml'>http://www.nhc.gov.cn/xcs/yqtb/202001/930c021cdd1f46dc832fc27e0cc465c8.shtml</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01222020">
+        <h2> 01/22/2020 - Day 23 </h2>
+        <p>Hubei Province initiates <b>level 2</b> emergency response to public health emergencies. According to the regulations, the task of releasing new cases of pneumonia now moved to the Hubei Provincial Health Commission instead of that of Wuhan City.</p>
+        <p>The Hubei Provincial Health Commission held the first press conference on the prevention and control of pneumonia outbreaks. A total of 444 confirmed cases were reported (28 cured, 17 deaths).</p>
+        <p><img src="images/chinastory/china01222020.jpg" width='100%'></p>
+        <p>Press Office of the State Council held a press conference on the prevention and control of pneumonia caused by new coronavirus.</p>
+        <p>North Korea temporarily closed its borders to all foreign tourists as a precaution to the coronavirus on January 22.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://wjw.wuhan.gov.cn/front/web/showDetail/2020012209088'>http://wjw.wuhan.gov.cn/front/web/showDetail/2020012209088</a></li>
+          <li><a href='https://www.reuters.com/article/us-health-coronavirus-china-toll/chinas-wuhan-closes-coronavirus-hospital-as-officials-hail-drop-in-new-cases-idUSKBN20P01K'>https://www.reuters.com/article/us-health-coronavirus-china-toll/chinas-wuhan-closes-coronavirus-hospital-as-officials-hail-drop-in-new-cases-idUSKBN20P01K</a></li>
+          <li><a href='http://wjw.hubei.gov.cn/fbjd/dtyw/202001/t20200130_2016538.shtml'>http://wjw.hubei.gov.cn/fbjd/dtyw/202001/t20200130_2016538.shtml</a></li>
+          <li><a href='http://www.gov.cn/xinwen/2020-01/22/content_5471560.htm'>http://www.gov.cn/xinwen/2020-01/22/content_5471560.htm</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="china01232020">
+        <h2> 01/23/2020 - Day 24 </h2>
+        <p>2 days before Chinese New Year.</p>
+        <br>
+        <p><img src="images/chinastory/china01232020.jpg" width='100%'></p>
+        <p><b>Shutdown of Wuhan: Officials announced a quarantine of the greater Wuhan, China area to commence on Jan 23 2020 at 10:00 a.m. No traffic would be allowed in or out of the city, including all bus, metro, and ferry lines.</b></p>
+        <p>The Wuhan Municipal Government promised to build an emergency hospital of 25,000 square meters and a capacity of 1,000 beds within 6 days. The construction would follow the model of Beijing Xiaotangshan that dealt with SARS in 2003.</p>
+        <p>National Health Commission released a detailed report of 17 death cases and published <i>Diagnosis and Treatment plan of the new coronavirus infected pneumonia (trial version 3)</i>.</p>
+
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='http://www.bjd.com.cn/a/202003/27/WS5e7dea1be4b03cc9592dadfb.html'>http://www.bjd.com.cn/a/202003/27/WS5e7dea1be4b03cc9592dadfb.html</a></li>
+          <li><a href='https://twitter.com/ChinaDaily/status/1220052882596286465'>https://twitter.com/ChinaDaily/status/1220052882596286465</a></li>
+          <li><a href='http://www.nhc.gov.cn/yzygj/s7653p/202001/f492c9153ea9437bb587ce2ffcbee1fa.shtml'>http://www.nhc.gov.cn/yzygj/s7653p/202001/f492c9153ea9437bb587ce2ffcbee1fa.shtml</a></li>
+          <li><a href='http://www.nhc.gov.cn/xcs/yqtb/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml'>http://www.nhc.gov.cn/xcs/yqtb/202001/5d19a4f6d3154b9fae328918ed2e3c8a.shtml</a></li>
+          <li><a href='http://www.caac.gov.cn/XWZX/DFDT/202003/t20200311_201393.html'>http://www.caac.gov.cn/XWZX/DFDT/202003/t20200311_201393.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center">
+      <div class="chart-control-container"><div id="chart"></div></div>
+      </section>
+
+      <section class="center">
+        <br>
+      </section>
+
+      <h1 id="us">America: A Nation in Lockdown</h1>
+
+      <section class="center" id="us01212020">
+        <h2> 01/21/2020 - Day 1 </h2>
+        <p><b>The first confirmed coronavirus case in the United States</b>, a man in his 30s in Washington state who recently visited Wuhan. He returned to the United States on January 15, 2020.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165'>https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165</a></li>
+          <li><a href='https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html'>https://www.cdc.gov/media/releases/2020/p0121-novel-coronavirus-travel-case.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01242020">
+        <h2> 01/24/2020 - Day 4 </h2>
+        <p><b>Anthony Fauci</b>, head of the National Institute of Allergy and Infectious Diseases, comments: <b>"We don't want the American public to be worried about this because their risk is low,"</b> Fauci said. "On the other hand, we are taking this very seriously and are dealing very closely with Chinese authorities."</p>
+        <p><b>The US confirms second coronavirus case</b>, a woman in Chicago who returned to the U.S. from Wuhan on January 13, 2020. The CDC states, "While we consider this a serious public health threat, based on current information, the immediate health risk from 2019-nCoV to the general American public is considered low at this time."</p>
+        <!-- <br>
+        <p><img src="images/usstory/us01242020.jpg" width='100%'></p> -->
+        <p>U.S. Senate is briefed on the coronavirus by key health officials. U.S. Senators Richard M. Burr, Kelly Loeffler, Dianne Feinstein, and James Inhofe allegedly sell stock thereafter, prior to significant declines in the stock market. As of a 2012 law known as the STOCK Act, senators are prohibited from using nonpublic information to turn a private profit.</p>
+        <br>
+        <p><img src="images/usstory/us012420202.png" width='100%'></p>
+        <p>President Trump tweeted to praise China for its efforts to prevent the spread of the virus.</p>
+        <br>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-spreads-first-time-u-s-cdc-says-n1126566'>https://www.nbcnews.com/health/health-news/coronavirus-spreads-first-time-u-s-cdc-says-n1126566</a></li>
+          <li><a href='https://www.devex.com/news/covid-19-a-timeline-of-the-coronavirus-outbreak-96396'>https://www.devex.com/news/covid-19-a-timeline-of-the-coronavirus-outbreak-96396</a></li>
+          <li><a href='https://www.cdc.gov/media/releases/2020/p0124-second-travel-coronavirus.html'>https://www.cdc.gov/media/releases/2020/p0124-second-travel-coronavirus.html</a></li>
+          <li><a href='https://www.nytimes.com/2020/03/20/us/politics/kelly-loeffler-richard-burr-insider-trading.html'>https://www.nytimes.com/2020/03/20/us/politics/kelly-loeffler-richard-burr-insider-trading.html</a></li>
+          <li><a href='https://twitter.com/realDonaldTrump/status/1220818115354923009'>https://twitter.com/realDonaldTrump/status/1220818115354923009</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01262020">
+        <h2> 01/26/2020 - Day 6 </h2>
+        <p><img src="images/usstory/us01262020.jpeg" width='100%'></p>
+        <p>First confirmed cases of coronavirus in California and Arizona.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://losangeles.cbslocal.com/2020/01/26/public-health-officials-confirm-first-case-of-novel-coronavirus-in-la-county/'>https://losangeles.cbslocal.com/2020/01/26/public-health-officials-confirm-first-case-of-novel-coronavirus-in-la-county/</a></li>
+          <li><a href='https://www.thedailybeast.com/5th-us-case-of-coronavirus-confirmed-in-arizona'>https://www.thedailybeast.com/5th-us-case-of-coronavirus-confirmed-in-arizona</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01282020">
+        <h2> 01/28/2020 - Day 8 </h2>
+        <p><img src="images/usstory/us01282020.png" width='100%'></p>
+        <p>The chairman of the coronavirus task force, Alex Azar, tells reporters that the U.S. has <b>"been monitoring this virus and preparing a response since back in December."</b></p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://www.youtube.com/watch?v=w6koHkBCoNQ'>https://www.youtube.com/watch?v=w6koHkBCoNQ</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01292020">
+        <h2> 01/29/2020 - Day 9 </h2>
+        <p><img src="images/usstory/us01292020.png" width='100%'></p>
+        <p>The White House announces a taskforce to “monitor, contain and mitigate the spread of the virus”. President Trump attends the meeting and tweets related photos. The scope is limited initially to the logistics of keeping travelers out of the U.S. from China, and evacuating U.S. citizens.</p>
+        <p><b>The U.S. government evacuates 195 State Department employees from Wuhan along with their families and other U.S. citizens</b> to March Air Reserve Base near Riverside, California, where they are kept under quarantine for 14 days. None have been infected.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://twitter.com/realDonaldTrump/status/1222672488934584324'>https://twitter.com/realDonaldTrump/status/1222672488934584324</a></li>
+          <li><a href='https://www.washingtonpost.com/national-security/2020/04/04/coronavirus-government-dysfunction/'>https://www.washingtonpost.com/national-security/2020/04/04/coronavirus-government-dysfunction/</a></li>
+          <li><a href='https://www.reuters.com/article/us-china-health-usa/two-planes-left-wuhan-china-en-route-to-us-state-department-idUSKBN20105M'>https://www.reuters.com/article/us-china-health-usa/two-planes-left-wuhan-china-en-route-to-us-state-department-idUSKBN20105M</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01302020">
+        <h2> 01/30/2020 - Day 10 </h2>
+        <p><b>The first case of person-to-person transmission was confirmed in Chicago</b>, between a married couple, after the wife returned from China. (seen January 24).</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.marketwatch.com/story/coronavirus-update-a-new-task-force-195-us-citizens-in-isolation-and-who-to-decide-if-its-a-public-health-emergency-2020-01-30'>https://www.marketwatch.com/story/coronavirus-update-a-new-task-force-195-us-citizens-in-isolation-and-who-to-decide-if-its-a-public-health-emergency-2020-01-30</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us01312020">
+        <h2> 01/31/2020 - Day 11 </h2>
+        <p><img src="images/usstory/us01312020.jpg" width='100%'></p>
+        <p><b>U.S. Department of Health and Human Services declares a public health emergency</b> and imposes a mandatory 14-day quarantine for any U.S. citizens who has visited Hubei Province in China within the previous two weeks.</p>
+        <p><b>The White House announces that it would ban entry for non-U.S. nationals who had traveled to China within the last 14 days in efforts to halt the spread of COVID-19.</b> This was the first such travel restriction by the U.S. in more than 50 years.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.marketwatch.com/story/coronavirus-update-a-new-task-force-195-us-citizens-in-isolation-and-who-to-decide-if-its-a-public-health-emergency-2020-01-30'>https://www.marketwatch.com/story/coronavirus-update-a-new-task-force-195-us-citizens-in-isolation-and-who-to-decide-if-its-a-public-health-emergency-2020-01-30</a></li>
+          <li><a href='https://www.nbcnews.com/news/world/china-criticizes-u-s-border-closure-coronavirus-death-toll-rises-n1128161'>https://www.nbcnews.com/news/world/china-criticizes-u-s-border-closure-coronavirus-death-toll-rises-n1128161</a></li>
+          <li><a href='https://www.wsj.com/articles/u-k-reports-first-coronavirus-cases-as-china-allies-limit-ties-11580467046'>https://www.wsj.com/articles/u-k-reports-first-coronavirus-cases-as-china-allies-limit-ties-11580467046</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02032020">
+        <h2> 02/03/2020 - Day 14 </h2>
+        <p><img src="images/usstory/us02032020.webp" width='100%'></p>
+        <p>49 members of Congress sign a letter to CDC Director Redfield highlighting the urgency of distributing a <b>rapid diagnostic kit</b> that could be processed locally, rather than centrally at the CDC in Atlanta.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://kilmer.house.gov/imo/media/doc/Letter%20to%20CDC%20Director%20Redfield%202.3.2020.pdf'>letter from 49 members of Congress</a></li>
+          <li><a href='https://www.vox.com/science-and-health/2020/2/28/21155917/preparing-for-coronavirus-in-the-us-cdc-diagnostic-testing'>https://www.vox.com/science-and-health/2020/2/28/21155917/preparing-for-coronavirus-in-the-us-cdc-diagnostic-testing</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02062020">
+        <h2> 02/06/2020 - Day 17 </h2>
+        <p>The federal Centers for Disease Control and Prevention (CDC) ships coronavirus testing kits to labs, but early tests are contaminated, handicapping the response.</p>
+        <p>First death from COVID-19, in Santa Clara County, California, as found by an autopsy and as reported <b>two months later</b>. Previously, the first U.S. death had been thought to occur Feb. 29 outside Seattle. The autopsy findings revealed that the virus may have been spreading in U.S. communities <b>earlier than previously known</b>.</p>
+        <p>Another government evacuation flight took place on February 6, containing 300 passengers, most of who were taken to bases in Nebraska and Texas. By this time, more than 500 people were quarantined at three air bases.</p>
+        <p><img src="images/usstory/us02062020.jpg" width='100%'></p>
+        <p>Wisconsin’s first confirmed case of the new coronavirus, a college student who returned to Dane County Regional Airport after a trip to Beijing January 30.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.sfchronicle.com/bayarea/article/Exclusive-Autopsy-report-of-first-known-15226422.php'>https://www.sfchronicle.com/bayarea/article/Exclusive-Autopsy-report-of-first-known-15226422.php</a></li>
+          <li><a href='https://www.nytimes.com/2020/04/22/us/santa-clara-county-coronavirus-death.html'>https://www.nytimes.com/2020/04/22/us/santa-clara-county-coronavirus-death.html</a></li>
+          <li><a href='https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths'>https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths</a></li>
+          <li><a href='https://q13fox.com/2020/02/06/planeloads-of-americans-flee-growing-coronavirus-outbreak-in-wuhan-as-12th-case-is-reported-in-the-us/'>https://q13fox.com/2020/02/06/planeloads-of-americans-flee-growing-coronavirus-outbreak-in-wuhan-as-12th-case-is-reported-in-the-us/</a></li>
+          <li><a href='https://madison.com/wsj/news/local/health-med-fit/wisconsins-first-case-of-new-coronavirus-from-china-is-resident-of-dane-county/article_4ef1a52c-403a-57f1-bc7a-38222e66b44a.html'>https://madison.com/wsj/news/local/health-med-fit/wisconsins-first-case-of-new-coronavirus-from-china-is-resident-of-dane-county/article_4ef1a52c-403a-57f1-bc7a-38222e66b44a.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02112020">
+        <h2> 02/11/2020 - Day 22 </h2>
+        <p><img src="images/usstory/us02112020.png" width='100%'></p>
+        <p>The WHO announces a formal name for the coronavirus – COVID-19.</p>
+        <p><b>The CDC confirmed the 13th U.S. coronavirus case, and about 800 Americans evacuated from Wuhan remain under quarantine</b>. At a rally in New Hampshire, President Trump said that, "in theory" once the weather warms up, "the virus" will "miraculously" go away.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://www.who.int/health-topics/coronavirus'>https://www.who.int/health-topics/coronavirus</a></li>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <!-- <section class="center" id="us02122020">
+        <h2> 02/12/2020 - Day 23 </h2>
+        <p><img src="images/usstory/us02122020.png" width='100%'></p>
+        <p><b>A 60-year-old U.S. citizen became what appears to be the first American fatality from the global virus outbreak</b>. The American victim, who was not identified, died in China after being diagnosed with the COVID-19, according to the U.S. Embassy.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          </ul>
+        </p>
+      </section> -->
+
+      <section class="center" id="us02152020">
+        <h2> 02/15/2020 - Day 26 </h2>
+        <p><img src="images/usstory/us02152020.png" width='100%'></p>
+        <p>The government evacuates 338 U.S. nationals stranded aboard the cruise ship Diamond Princess, which had been held in quarantine in Yokohama, Japan. Fourteen of those repatriated people are infected with the virus.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.reuters.com/article/us-china-health-japan-cruiseship-usa/u-s-state-dept-says-fourteen-test-positive-for-coronavirus-from-cruise-ship-in-japan-idUSKBN20B0U9'>https://www.reuters.com/article/us-china-health-japan-cruiseship-usa/u-s-state-dept-says-fourteen-test-positive-for-coronavirus-from-cruise-ship-in-japan-idUSKBN20B0U9</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02212020">
+        <h2> 02/21/2020 - Day 32 </h2>
+        <p><img src="images/usstory/us02212020.jpg" width='100%'></p>
+        <p><b>U.S. health officials prepare for the coronavirus to become a pandemic</b>. "We're not seeing community spread here in the United States, yet, but it’s very possible, even likely, that it may eventually happen," says Dr. Nancy Messonnier, director of CDC’s National Center for Immunization and Respiratory Diseases.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://www.cnn.com/asia/live-news/coronavirus-outbreak-02-25-20-hnk-intl/h_305645049a7d927cfa4d1b38d5090517'>https://www.cnn.com/asia/live-news/coronavirus-outbreak-02-25-20-hnk-intl/h_305645049a7d927cfa4d1b38d5090517</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02242020">
+        <h2> 02/24/2020 - Day 35 </h2>
+        <p><img src="images/usstory/us022420201.png" width='100%'></p>
+        <p><b>The US stock market plummets due to coronavirus fears</b>. The Dow Jones Industrial Average, a historically popular stock, experiences its worst day financially in over two years.</p>
+        <br>
+        <p><img src="images/usstory/us022420202.png" width='100%'></p>
+        <p>President Trump tweets: "The Coronavirus is very much under control in the USA."</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://twitter.com/realdonaldtrump/status/1232058127740174339'>https://twitter.com/realdonaldtrump/status/1232058127740174339</a></li>
+          <li><a href='https://www.washingtonpost.com/business/2020/02/24/stocks-dow-nasdaq-coronavirus/'>https://www.washingtonpost.com/business/2020/02/24/stocks-dow-nasdaq-coronavirus/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02262020">
+        <h2> 02/26/2020 - Day 37 </h2>
+        <p>The CDC announces that a patient in California has tested positive for COVID-19, potentially the first US case where the source of infection is due to <b>local transmission</b>.</p>
+        <br>
+        <video width="100%" height="100%" controls>
+        <source src="data/us02262020.mp4" type="video/mp4">
+        </video>
+        <p>President Trump appoints Vice President Mike Pence to lead the coronavirus response (replacing HHS Secretary Azar).</p>
+        <p><b>"When you have 15 people (confirmed cases), and the 15 within a couple of days is going to be down close to zero, that's a pretty good job we've done." Trump states at a press conference, "We're very, very ready for this," "The risk to the American people remains very low."</b></p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-conference/'>https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-conference/</a></li>
+          <li><a href='https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths'>https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths</a></li>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165'>https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165</a></li>
+          <li><a href='https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-conference/'>https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-conference/</a></li>
+          <li><a href='https://www.youtube.com/watch?v=xTh1xG_ME78'>https://www.youtube.com/watch?v=xTh1xG_ME78</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02282020">
+        <h2> 02/28/2020 - Day 39 </h2>
+        <p><img src="images/usstory/us02282020.jpg" width='100%'></p>
+        <p>Dr. Nancy Messonnier states that the CDC has taken steps to address problems with <b>flawed test kits mailed to state and local labs</b>.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/'>https://www.usatoday.com/in-depth/news/nation/2020/04/21/coronavirus-updates-how-covid-19-unfolded-u-s-timeline/2990956001/</a></li>
+          <li><a href='https://www.nytimes.com/2020/02/12/health/coronavirus-test-kits-cdc.html'>https://www.nytimes.com/2020/02/12/health/coronavirus-test-kits-cdc.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us02292020">
+        <h2> 02/29/2020 - Day 40 </h2>
+        <p>The US government makes public what is then believed to be its <b>first coronavirus-related death</b>, a man in his 50s at Evergreen Health Medical Center in Kirkland, Washington. (Seen in February 6: As confirmed later, the first U.S. death had actually occurred on February 6.).</p>
+        <br>
+        <p><img src="images/usstory/us02292020.png" width='100%'></p>
+        <p>President Trump authorized the expansion of travel restrictions against Iran and the new recommendation that Americans refrain from visiting regions of Italy and South Korea impacted by the coronavirus.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/news/us-news/1st-coronavirus-death-u-s-officials-say-n1145931Total'>https://www.nbcnews.com/news/us-news/1st-coronavirus-death-u-s-officials-say-n1145931Total</a></li>
+          <li><a href='https://www.cnbc.com/2020/02/29/us-expands-iran-travel-restrictions-over-coronavirus-raises-advisory-for-regions-in-south-korea-and-italy.html'>https://www.cnbc.com/2020/02/29/us-expands-iran-travel-restrictions-over-coronavirus-raises-advisory-for-regions-in-south-korea-and-italy.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03012020">
+        <h2> 03/01/2020 - Day 41 </h2>
+        <p><img src="images/usstory/us03012020.jpg" width='100%'></p>
+        <p>The CDC confirms the first coronavirus case in Rhode Island.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.bostonherald.com/2020/03/01/rhode-island-reports-first-presumptive-positive-coronavirus-case/'>https://www.bostonherald.com/2020/03/01/rhode-island-reports-first-presumptive-positive-coronavirus-case/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03022020">
+        <h2> 03/02/2020 - Day 42 </h2>
+        <p>The CDC confirms the first coronavirus cases in New Hampshire, New York, and Florida.</p>
+        <p><img src="images/usstory/us03022020.png" width='100%'></p>
+        <p>The United States deploys <b>$37 million</b> from the Emergency Reserve Fund for Contagious Infectious Diseases for countries affected by COVID-19.</p>
+        <p><b>Coronavirus cases in the U.S. reach 102</b>, including repatriated citizens from Wuhan or the Diamond Princess (Seen Jan 29, Feb 6, Feb 15). (48 cases from repatriated citizens and 54 local cases in 11 states.)</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.devex.com/news/covid-19-a-timeline-of-the-coronavirus-outbreak-96396'>https://www.devex.com/news/covid-19-a-timeline-of-the-coronavirus-outbreak-96396</a></li>
+          <li><a href='https://www.cnn.com/asia/live-news/coronavirus-outbreak-03-02-20-intl-hnk/h_ab394740b4249012dc266df09451872f'>https://www.cnn.com/asia/live-news/coronavirus-outbreak-03-02-20-intl-hnk/h_ab394740b4249012dc266df09451872f</a></li>
+          <li><a href='https://twitter.com/usaid/status/1234646328577126400'>https://twitter.com/usaid/status/1234646328577126400</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03032020">
+        <h2> 03/03/2020 - Day 43 </h2>
+        <p><img src="images/usstory/us03032020.jpg" width='100%'></p>
+        <p>The CDC issues <b>a new guidance that allows anyone to be tested for the virus without restriction</b>, instead of those only with severe symptoms.</p>
+        <p>The CDC confirms the first coronavirus cases in North Carolina and Georgia.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165'>https://abcnews.go.com/Health/timeline-coronavirus-started/story?id=69435165</a></li>
+          <li><a href='https://thehill.com/policy/healthcare/485822-cdc-to-issue-guidance-that-patients-can-get-coronavirus-test-with-doctors'>https://thehill.com/policy/healthcare/485822-cdc-to-issue-guidance-that-patients-can-get-coronavirus-test-with-doctors</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03042020">
+        <h2> 03/04/2020 - Day 44 </h2>
+        <p>U.S. Department of Health & Human Services (HHS) announces the intent to produce N95 respirators over the following 18 months to support healthcare workers in COVID-19 outbreaks.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.hhs.gov/about/news/2020/03/04/hhs-to-procure-n95-respirators-to-support-healthcare-workers-in-covid-19-outbreaks.html'>https://www.hhs.gov/about/news/2020/03/04/hhs-to-procure-n95-respirators-to-support-healthcare-workers-in-covid-19-outbreaks.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03052020">
+        <h2> 03/04/2020 - Day 45 </h2>
+        <video width="100%" height="100%" controls>
+        <source src="data/us03052020.mp4" type="video/mp4">
+        </video>
+        <p>The CDC confirms the first coronavirus cases in Nevada, Texas, New Jersey, and Tennessee.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.youtube.com/watch?v=ds-f5w-z4Lg'>https://www.youtube.com/watch?v=ds-f5w-z4Lg</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03062020">
+        <h2> 03/06/2020 - Day 46 </h2>
+        <p><img src="images/usstory/us03062020.jpg" width='100%'></p>
+        <p>President Trump signs an <b>$8.3 billion emergency funding package to try and alleviate the COVID-19 crisis</b>. Austin, Texas, cancels the SXSW conference and festivals, beginning the trend of further cancellations of conferences, concerts, and other high-profile events across the country due to the coronavirus.</p>
+        <p>Ten states report their first case of coronavirus: Hawaii, Utah, Nebraska, Kentucky, Indiana, Minnesota, Connecticut, South Carolina, Pennsylvania, and Oklahoma. Many cases are associated with passengers from the Grand Princess cruise ship.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03072020">
+        <h2> 03/07/2020 - Day 47 </h2>
+        <p><img src="images/usstory/us03072020.jpg" width='100%'></p>
+        <p>Virginia, Kansas, Missouri, and Washington, D.C. announce their first cases.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.bostonglobe.com/2020/03/08/nation/officials-confirm-first-coronavirus-case-washington-dc/'>https://www.bostonglobe.com/2020/03/08/nation/officials-confirm-first-coronavirus-case-washington-dc/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03082020">
+        <h2> 03/08/2020 - Day 48 </h2>
+        <p><img src="images/usstory/us03082020.jpg" width='100%'></p>
+        <p>Iowa and Vermont report their first cases of infection with the coronavirus. The CDC reports that the coronavirus now has confirmed cases in over half of the states in the U.S.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.vpr.org/post/health-officials-announce-first-coronavirus-case-vermont#stream/0'>https://www.vpr.org/post/health-officials-announce-first-coronavirus-case-vermont#stream/0</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03092020">
+        <h2> 03/09/2020 - Day 49 </h2>
+        <p><img src="images/usstory/us03092020.png" width='100%'></p>
+        <p>Ohio Governor Mike DeWine declares a <b>state of emergency</b> after Ohio reports its first three cases of COVID-19.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.10tv.com/article/3-confirmed-cases-coronavirus-ohio-dewine-declares-state-emergency-2020-mar'>https://www.10tv.com/article/3-confirmed-cases-coronavirus-ohio-dewine-declares-state-emergency-2020-mar</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03112020">
+        <h2> 03/11/2020 - Day 51 </h2>
+        <p>Arkansas, Delaware, Mississippi, New Mexico, North Dakota and Wyoming report their first cases. 40 out of 50 states now have confirmed cases of COVID-19.</p>
+        <p style='text-align:center'><img src="images/usstory/us03112020.png" width='60%'></p>
+        <p><b>The World Health Organization (WHO) redefines the coronavirus outbreak as a global pandemic</b>. President Trump decides to restrict travel from 26 countries in Europe, excluding the United Kingdom and Ireland for the next month.</p>
+        <p>President Trump says in an Oval Office address, "The vast majority of Americans: The risk is very, very low. Young and healthy people can expect to recover fully and quickly if they should get the virus."</p>
+        <p>The National Basketball Association (NBA) <b>suspends its season</b> after Rudy Gobert, an NBA player, contracts the disease.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.whitehouse.gov/briefings-statements/remarks-president-trump-address-nation/'>https://www.whitehouse.gov/briefings-statements/remarks-president-trump-address-nation/</a></li>
+          <li><a href='https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths'>https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://twitter.com/WHO/status/1237777021742338049'>https://twitter.com/WHO/status/1237777021742338049</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03122020">
+        <h2> 03/12/2020 - Day 52 </h2>
+        <p>Other major American sports leagues and tournaments are cancelled indefinitely, such as the MLB and NHL.</p>
+        <p><img src="images/usstory/us03122020.webp" width='100%'></p>
+        <p>The NCAA cancels all postseason tournaments in their winter and spring sports, including the men's and women's basketball tournaments, as well as the baseball and softball tournaments. The cancellation of the basketball tournament marks the <b>first time</b> the tournament will not be held due to unforeseen circumstances.</p>
+        <p>Productions on Broadway announce they are closing.</p>
+        <p>Georgia and Kansas have their first deaths due to COVID-19 according to the CDC.</p>
+        <p>Source:
+          <ul>
+          <li><a href='https://www.newsweek.com/ncaa-cancels-basketball-tournaments-all-winter-spring-championships-because-coronavirus-1492049'>https://www.newsweek.com/ncaa-cancels-basketball-tournaments-all-winter-spring-championships-because-coronavirus-1492049</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths'>https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03132020">
+        <h2> 03/13/2020 - Day 53 </h2>
+        <p><img src="images/usstory/us03132020.jpg" width='100%'></p>
+        <p><b>President Trump declares a national emergency due to the coronavirus</b>. Washington state orders its schools closed for the rest of the school year. Other states including Michigan, Pennsylvania, and Maryland announce future plans to close their schools as well.</p>
+        <p>President Donald Trump takes a COVID-19 test after coming into contact with several people who had contracted the disease and is found to be negative.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.cnn.com/2020/03/13/politics/donald-trump-emergency/index.html'>https://www.cnn.com/2020/03/13/politics/donald-trump-emergency/index.html</a></li>
+          <li><a href='https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths'>https://www.theguardian.com/us-news/2020/apr/25/us-coronavirus-timeline-trump-cases-deaths</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://abcnews.go.com/US/coronavirus-live-updates-house-passes-coronavirus-pandemic-stimulus/story?id=69593951'>https://abcnews.go.com/US/coronavirus-live-updates-house-passes-coronavirus-pandemic-stimulus/story?id=69593951</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03142020">
+        <h2> 03/14/2020 - Day 54 </h2>
+        <p><img src="images/usstory/us03142020.jpg" width='100%'></p>
+        <p>All states <b>except West Virginia</b> have confirmed COVID-19 cases. Twelve states have virus-related deaths.</p>
+        <p>President Trump takes a COVID-19 test after coming into contact with several people who had contracted the disease and is found to be negative.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.rtmagazine.com/disorders-diseases/infectious-diseases/other-infections/west-virginia-is-the-last-us-state-without-coronavirus/'>https://www.rtmagazine.com/disorders-diseases/infectious-diseases/other-infections/west-virginia-is-the-last-us-state-without-coronavirus/</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03152020">
+        <h2> 03/15/2020 - Day 55 </h2>
+        <p>The White House announces that the European travel ban would now apply to the United Kingdom and Ireland.</p>
+        <p>The CDC releases guidelines that recommend organizers <b>cancel or postpone events of fifty people or more across the US for an eight-week period</b>.</p>
+        <p>Twenty-nine more states, including New York, Massachusetts, and South Carolina announce school closures due to COVID-19 fears. <b>New York, California, and Washington have the most confirmed cases</b>.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://www.cnbc.com/2020/03/16/cdc-recommends-the-cancellation-of-events-with-50-or-more-people-for-the-next-eight-weeks-throughout-us.html'>https://www.cnbc.com/2020/03/16/cdc-recommends-the-cancellation-of-events-with-50-or-more-people-for-the-next-eight-weeks-throughout-us.html</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03162020">
+        <h2> 03/16/2020 - Day 56 </h2>
+        <p>Despite the fact that the Federal Reserve Bank lowered interest rates the day prior, <b>the stock market fell once again</b>. Wall Street struggles mightily, as some major stocks report a 12% or more loss for the day.</p>
+        <p>San Francisco imposes prohibitions on residents leaving their homes except for essential needs, becoming the first city in America to implement <b>“stay-at-home”</b> restrictions in response to the coronavirus.</p>
+        <video width="100%" height="100%" controls>
+        <source src="data/us03162020.mp4" type="video/mp4">
+        </video>
+        <p>The Trump administration's coronavirus task force advises stricter guidelines than the CDC released a day ago, <b>telling Americans to avoid gatherings of ten or more people as well as to avoid bars and restaurants</b>.</p>
+        <p>US researchers administer first preliminary test vaccine, but warn that a vaccine would not be universally available for at least 12 to 18 months.</p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-vaccine-test-opens-1st-doses-n1160836'>https://www.nbcnews.com/health/health-news/coronavirus-vaccine-test-opens-1st-doses-n1160836</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/san-francisco-require-people-stay-home-except-essential-needs-n1160916'>https://www.nbcnews.com/health/health-news/san-francisco-require-people-stay-home-except-essential-needs-n1160916</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center" id="us03172020">
+        <h2> 03/17/2020 - Day 57 </h2>
+        <p>Maryland’s governor postpones the state’s primary election due to concerns of people gathering to vote in person. Florida, Illinois, and Arizona, however, proceed with their respective presidential primaries.</p>
+        <br>
+        <p><img src="images/usstory/us03172020.png" width='100%'></p>
+        <p><b>West Virginia, the last state without a confirmed COVID-19 case, finally records its first case</b>, meaning the US now has infections in all 50 states, Puerto Rico, the US Virgin Islands, and Washington, DC.</p>
+        <p>Finally, President Trump said: <b>"This is a pandemic. ... I felt it was a pandemic long before it was called a pandemic."</b></p>
+
+        <p>Source:
+          <ul>
+          <li><a href='https://www.nbcnews.com/health/health-news/live-blog/coronavirus-updates-countries-across-world-step-restrictions-combat-crisis-n1161301/ncrd1161661#liveBlogHeader'>https://www.nbcnews.com/health/health-news/live-blog/coronavirus-updates-countries-across-world-step-restrictions-combat-crisis-n1161301/ncrd1161661#liveBlogHeader</a></li>
+          <li><a href='https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341'>https://www.nbcnews.com/health/health-news/coronavirus-timeline-tracking-critical-moments-covid-19-n1154341</a></li>
+          <li><a href='https://www.businessinsider.com/coronavirus-hits-every-us-state-west-virginia-first-infection-2020-3'>https://www.businessinsider.com/coronavirus-hits-every-us-state-west-virginia-first-infection-2020-3</a></li>
+          <li><a href='https://myfox8.com/news/coronavirus/west-virginia-the-last-us-state-without-coronavirus-confirms-1st-case/'>https://myfox8.com/news/coronavirus/west-virginia-the-last-us-state-without-coronavirus-confirms-1st-case/</a></li>
+          <li><a href='https://www.npr.org/sections/goatsandsoda/2020/04/15/835011346/a-timeline-of-coronavirus-comments-from-president-trump-and-who'>https://www.npr.org/sections/goatsandsoda/2020/04/15/835011346/a-timeline-of-coronavirus-comments-from-president-trump-and-who</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center">
+      <div class="chart-control-container"><div id="uschart"></div></div>
+      </section>
+
+      <section class="center">
+        <br>
+      </section>
+
+
+      <section class="center" id="con">
+        <h1 id="conclusion">Conclusion from COVID-19 Stories</h1>
+        <div class="chart-control-container"><div id="conchart"></div></div>
+        <br>
+        <p>
+          Timelines of the coronavirus disease 2019 (COVID-19) in China and the U.S. reveal detailed stories of how the first few cases gradually developed into a pandemic, and how government officials and health agencies acted together in fighting the transmission of the virus outbreak.
+        </p>
+        <p>
+          China and the United States exhibited different spatial patterns of coronavirus spread in their respective regions. <b>In China, most cases originated in Wuhan, Hubei Province.</b> Direct controls of the origin of the virus (such as the shutdown of the city and later the province) helped prevent the virus from spreading further. <b>In the U.S., however, the first few confirmed cases were scattered across states on the east and west coasts</b>, which made containment problematic and required nation-wide preventive measures.
+        </p>
+        <p>
+          <b>Both governments have struggled to assess the virus accurately in terms of its severity</b>. Coronavirus was underestimated and was not acted upon proactively. Chinese officials took three weeks to confirm human-to-human transmission. The U.S. government, even having received warnings about COVID-19 from WHO and having weeks to prepare, didn’t introduce social distancing and stay-at-home policies until it was too late to prevent mass contamination. A lack of testing kits and necessary medical care equipment has also plagued the effectiveness of the response.
+        </p>
+        <p>
+          China and America have not succeeded in stopping the spread of COVID-19, but most of the world has failed as well. The global community was not prepared for the coronavirus, but it will also learn from its mistakes. <b>COVID-19 is truly the first pandemic of the modern era and will serve as a landmark case in which health organizations and officials will look back on to aid them in future times of pandemic crises</b>. It is a painful but necessary lesson the world needed to learn in order to strive forward confidently in the future. <b>It will certainly not be the last time there will be a global health emergency, but with the selflessness shown by healthcare workers and other essential employees today, there is certainly cause for hope looking ahead</b>.
+        </p>
+
+        <p>Data Source:
+          <ul>
+          <li><a href='https://github.com/CSSEGISandData/COVID-19'>COVID-19 Data by Johns Hopkins University</a></li>
+          <li><a href='https://coronadatascraper.com/'>Corona Data Scraper</a></li>
+          <li><a href='https://www.cdc.gov/'>Centers for Disease Control and Prevention of the U.S.</a></li>
+          <li><a href='http://wjw.wuhan.gov.cn/'>Wuhan Municipal Health Commission</a></li>
+          </ul>
+        </p>
+      </section>
+
+      <section class="center">
+        <br>
+      </section>
+
+      <section class="center" id="credits">
+        <p>Powered by leaflet and D3.js</p>
+        <p>Authors: <a>Jinmeng Rao</a>, <a>Jianxiang Qiu</a>, <a>Griffin Rock</a></p>
+        <p>Geog 575, Department of Geography, UW-Madison</p>
+        <p><br></p>
+      </section>
+
+    </article>
+
+
+    <script src="lib/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="lib/jquery.easing.min.js"></script>
+
+    <script src="lib/leaflet/leaflet-src.js" type="text/javascript"></script>
+    <script src="lib/leaflet/leaflet.js" type="text/javascript"></script>
+    <script src="lib/leaflet/leaflet-providers.js" type="text/javascript"></script>
+    <script src="lib/scroll-monitor.js" type="text/javascript"></script>
+    <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="lib/d3.js" type="text/javascript"></script>
+    <script src="lib/d3.v5.min.js"></script>
+    <script src="lib/c3/c3.min.js" type="text/javascript"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+
+    <script src="lib/agency.js"></script>
+
+    <script src="js/geojsonfeature.js" type="text/javascript"></script>
+
+    <!-- <link href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js" type="text/javascript"></script> -->
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <div id="about" title="About">
+      <section class="center">
+        <p style="text-align:center;font-size:20px"><b>COVID-19: How Did We Get Here?</b></p>
+        <p style="text-align:center">Authors: <a style="color:rgb(230,230,4)" href='mailto:jinmeng.rao@wisc.edu'>Jinmeng Rao</a>, <a style="color:rgb(230,230,4)" href='mailto:jqiu62@wisc.edu'>Jianxiang Qiu</a>, <a style="color:rgb(230,230,4)" href='mailto:grock@wisc.edu'>Griffin Rock</a></p>
+        <p style="text-align:center">Department of Geography, UW-Madison</p>
+        <br>
+        <p>Final project for GEOG 575. Map stories of the early spread of coronavirus in China and the United States. Powered by leaflet, JQuery, Bootstrap, C3.js, D3.js, and more.</p>
+        <p><b>Guide</b>: Scroll to read the stories; Click on the symbols on the map to retrieve the cases or events.</p>
+
+
+        <p><br></p>
+      </section>
+    </div>
+
+
+</body>
+</html>
