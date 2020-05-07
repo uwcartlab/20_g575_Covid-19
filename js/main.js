@@ -2596,7 +2596,7 @@
     // About dialog
     $( function() {
       $( "#about" ).dialog({
-        autoOpen: false,
+        autoOpen: true,
         modal: true,
         show: {
           effect: "blind",
