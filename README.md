@@ -1,4 +1,10 @@
-# Update
+# Final Code Update
+
+The final code is updated to the repo.
+
+For your convenience, we also deploy the project on our server: http://www.jinmengrao.com/covid-19
+
+# 75% Update
 
 The code for 75% check-in is updated to the repo.
 
